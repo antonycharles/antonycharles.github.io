@@ -31,7 +31,7 @@
     </article>
     <div class="grid">
         <div class="flex-container-tecno">
-            <aside class="item modal-open" data-modal="md-dot-net">
+            <aside class="item" onclick="modal.openModal(this)" data-modal="md-dot-net">
                 <figure>
                     <img src="images/icones/hashtag.png" title="<?= langs('title.Net'); ?>"/>
                     <figcaption><?= langs('title.Net'); ?></figcaption>
@@ -41,7 +41,7 @@
                 </div>
             </aside>
             <?php include 'modals/dot-net.php';?>
-            <aside class="item modal-open" data-modal="md-javascript">
+            <aside class="item" onclick="modal.openModal(this)" data-modal="md-javascript">
                 <figure>
                     <img src="images/icones/javascript.png" title="<?= langs('title.JavaScript'); ?>"/>
                     <figcaption><?= langs('title.JavaScript'); ?></figcaption>
@@ -51,7 +51,7 @@
                 </div>
             </aside>
             <?php include 'modals/javascript.php'; ?>
-            <aside class="item modal-open" data-modal="md-java">
+            <aside class="item" onclick="modal.openModal(this)" data-modal="md-java">
                 <figure>
                     <img src="images/icones/java.png" title="<?= langs('title.Java'); ?>"/>
                     <figcaption><?= langs('title.Java'); ?></figcaption>
@@ -61,7 +61,7 @@
                 </div>
             </aside>
             <?php include 'modals/java.php'; ?>
-            <aside class="item modal-open" data-modal="md-php">
+            <aside class="item" onclick="modal.openModal(this)" data-modal="md-php">
                 <figure>
                     <img src="images/icones/elephant.png" title="<?= langs('title.Php'); ?>"/>
                     <figcaption><?= langs('title.Php'); ?></figcaption>
@@ -71,17 +71,17 @@
                 </div>
             </aside>
             <?php include 'modals/php.php'; ?>
-            <aside class="item modal-open" data-modal="md-html">
+            <aside class="item" onclick="modal.openModal(this)" data-modal="md-html">
                 <figure>
                     <img src="images/icones/html-5.png" title="<?= langs('title.Html'); ?>"/>
-                    <figcaption><?= langs('title.Html'); ?></figcaption>
+                    <figcaption><?= langs('title.Html'); ?>/<?= langs('title.Css'); ?></figcaption>
                 </figure>
                 <div class="overlay">
                     <div class="text"><i class="fas fa-plus-circle"></i><?= langs('links.Informacao'); ?></div>
                 </div>
             </aside>
             <?php include 'modals/html.php'; ?>
-            <aside class="item modal-open" data-modal="md-css">
+            <!--<aside class="item" onclick="modal.openModal(this)" data-modal="md-css">
                 <figure>
                     <img src="images/icones/css.png" title="<?= langs('title.Css'); ?>"/>
                     <figcaption><?= langs('title.Css'); ?></figcaption>
@@ -89,9 +89,9 @@
                 <div class="overlay">
                     <div class="text"><i class="fas fa-plus-circle"></i><?= langs('links.Informacao'); ?></div>
                 </div>
-            </aside>
+            </aside>-->
             <?php include 'modals/css.php'; ?>
-            <aside class="item modal-open" data-modal="md-sql">
+            <aside class="item" onclick="modal.openModal(this)" data-modal="md-sql">
                 <figure>
                     <img src="images/icones/sql.png" title="<?= langs('title.Sql'); ?>"/>
                     <figcaption><?= langs('title.Sql'); ?></figcaption>

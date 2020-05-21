@@ -1,16 +1,14 @@
 <div id="md-formacao-fatec" class="modal md-verde">
     <div class="modal-content">
-        <span class="close"><i class="fas fa-times"></i></span>
+        <span class="close" onclick="modal.closeModal(this)">
+            <i class="fas fa-times"></i>
+        </span>
         <h3 class="modal-header"> <img src="images/icones/reward-cinza.png"/> <?= langs('formacao.InformaticaNegocio'); ?></h3>
         <div class="row">
             <div class="cl-g-9 padding-right-30">
-                <span><?= langs('label.Descricao'); ?></span>
-                <p><?= langs('formacao.InNeDescricao1'); ?></p>
-                <p><?= langs('formacao.InNeDescricao2'); ?></p>
-
                 <span><?= langs('label.MatrizCurricular'); ?></span>
                 <div class="box-accordion">
-                    <button class="accordion">1º <?= langs('label.Semestre'); ?></button>
+                    <button class="accordion" onclick="accordion.changePanel(this)">1º <?= langs('label.Semestre'); ?></button>
                     <div class="panel">
                         <table>
                             <thead>
@@ -47,7 +45,7 @@
                             </tfoot>
                         </table>
                     </div>
-                    <button class="accordion">2º <?= langs('label.Semestre'); ?></button>
+                    <button class="accordion" onclick="accordion.changePanel(this)">2º <?= langs('label.Semestre'); ?></button>
                     <div class="panel">
                         <table>
                             <thead>
@@ -84,7 +82,7 @@
                             </tfoot>
                         </table>
                     </div>
-                    <button class="accordion">3º <?= langs('label.Semestre'); ?></button>
+                    <button class="accordion" onclick="accordion.changePanel(this)">3º <?= langs('label.Semestre'); ?></button>
                     <div class="panel">
                         <table>
                             <thead>
@@ -121,7 +119,7 @@
                             </tfoot>
                         </table>
                     </div>
-                    <button class="accordion active">4º <?= langs('label.Semestre'); ?></button>
+                    <button class="accordion active" onclick="accordion.changePanel(this)">4º <?= langs('label.Semestre'); ?></button>
                     <div class="panel" style="display:block">
                         <table>
                             <thead>
@@ -158,7 +156,7 @@
                             </tfoot>
                         </table>
                     </div>
-                    <button class="accordion">5º <?= langs('label.Semestre'); ?></button>
+                    <button class="accordion" onclick="accordion.changePanel(this)">5º <?= langs('label.Semestre'); ?></button>
                     <div class="panel">
                         <table>
                             <thead>
@@ -195,7 +193,7 @@
                             </tfoot>
                         </table>
                     </div>
-                    <button class="accordion">6º <?= langs('label.Semestre'); ?></button>
+                    <button class="accordion" onclick="accordion.changePanel(this)">6º <?= langs('label.Semestre'); ?></button>
                     <div class="panel">
                         <table>
                             <thead>

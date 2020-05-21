@@ -13,7 +13,7 @@ body{
     padding:0px;
     padding-top: 40px;
     position:relative;
-    color: #4a535a;
+    color: #4a4a4a;
 }
 main{
     display: inline;
@@ -31,7 +31,7 @@ a{
     text-decoration: none;
 }
 p{
-    color:#3a3a3a;
+    color:#4a4a4a;
     margin-top:0px;
 }
 span{
@@ -207,6 +207,10 @@ ul li p{
 .btn:hover{
     opacity: 0.7;
 }
+.btn.btn-block{
+    display:block;
+    width: 100%;
+}
 
 .header-top{
     background-color: #FFF;
@@ -245,7 +249,7 @@ ul li p{
     opacity:0.6;
 }
 .header-nav ul li a{
-    color: #464646;
+    color: #4a4a4a;
     display:block;
     font-weight: 800;
     letter-spacing: 1px;
@@ -421,7 +425,7 @@ ul li p{
     width: 70px;
 }
 .flex-container-tecno .item figcaption{
-    color:#343535;
+    color:#4a4a4a;
     margin-top:20px;
 }
 .flex-container-tecno .item .overlay{
@@ -554,7 +558,7 @@ ul li p{
     display: inline-block;
 }
 .bar-progresso{
-    border:2px solid #4a535a;
+    border:2px solid #4a4a4a;
     border-radius: 5px;
     height: 25px;
     margin-bottom: 15px;
@@ -854,9 +858,10 @@ ul li p{
 .modal .modal-header{
     border-bottom: 1px solid #DEDEDE;
     font-size: 1.5em;
+    font-weight: 200;
     letter-spacing: 1px;
     margin:0px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     padding:0px;
     padding-bottom: 10px;
     padding-right:25px;
@@ -1115,7 +1120,7 @@ table {
     -webkit-animation: schollAnimeteHeaderTop 1s;
     animation: schollAnimeteHeaderTop 1s; 
     position: fixed;
-    z-index:9999;
+    z-index:99999;
 }
 .header-top.fixed .header-logo img{
     width: 80px;

@@ -1,6 +1,6 @@
 <article>
-    <div class="cursos-item modal-open" data-modal="md-livro-design-patterns-java">
-        <span class="tab tab-livro"><?= langs('label.Livro'); ?></span>
+    <div class="cursos-item" onclick="modal.openModal(this)" data-modal="md-formacao-dotnet-alura">
+        <span class="tab tab-curso"><?= langs('label.Curso'); ?></span>
         <header>
             <h2><?= langs('cursos.titleFormacaoC'); ?></h2>
             <figure>
@@ -11,14 +11,16 @@
             </div>
         </header>
     </div>
-    <div id="md-livro-design-patterns-java" class="modal md-small md-vermelho-2">
+    <div id="md-formacao-dotnet-alura" class="modal md-small md-vermelho-2">
         <div class="modal-content">
-            <span class="close"><i class="fas fa-times"></i></span>
+            <span class="close" onclick="modal.closeModal(this)">
+                <i class="fas fa-times"></i>
+            </span>
             <h3 class="modal-header"><img src="images/icones/083-video-conference.png"/> <?= langs('cursos.titleFormacaoC'); ?></h3>
             <div class="row">
                 <div class="cl-12">
-                    <p>Conclui a Formação .NET na plataforma Alura, dentro desta formação realizei diversos cursos referentes a linguagem C# e também a plataforma .NET.</p>
-                    <p>Fiz estes cursos depois de já ter conhecimento e estar trabalhando com .NET, o que me ajudou a ter um conhecimento melhor sobre os conceitos da plataforma .NET, tanto na parte de desenvolvimento, boas práticas e realização de testes.</p>
+                    <p>Conclui a Formação .NET na plataforma Alura, onde realizei diversos cursos referentes a linguagem C# e também a plataforma .NET.</p>
+                    <p>Estes cursos me ajudaram a ter um conhecimento melhor sobre os conceitos e paradigmas do .NET, tanto na parte de desenvolvimento, boas práticas e testes.</p>
                     <span class="span">Lista de cursos:</span>
                     <ul class="list list-projetos li-block">
                         <li>C# parte 1: Primeiros passos</li>

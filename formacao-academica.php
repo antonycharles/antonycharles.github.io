@@ -56,7 +56,9 @@
                     </div>
                     <br/>
                     <div class="text-center">
-                        <button class="btn btn-secondary modal-open" data-modal="md-formacao-fatec"><i class="fas fa-plus"></i> <?= langs('links.Informacao'); ?></button>
+                        <button class="btn btn-secondary" onclick="modal.openModal(this)" data-modal="md-formacao-fatec">
+                            <i class="fas fa-plus"></i> <?= langs('links.Informacao'); ?>
+                        </button>
                     </div>
                     <?php include 'modals/fatec-informatica-negocios.php'; ?>
                 </article>
@@ -115,7 +117,9 @@
                     </div>
                     <br/>
                     <div class="text-center">
-                        <button class="btn btn-secondary modal-open" data-modal="md-formacao-etec-info-int"><i class="fas fa-plus"></i> <?= langs('links.Informacao'); ?></button>
+                        <button class="btn btn-secondary" onclick="modal.openModal(this)" data-modal="md-formacao-etec-info-int">
+                            <i class="fas fa-plus"></i> <?= langs('links.Informacao'); ?>
+                        </button>
                     </div>
                     <?php include 'modals/etec-tecnico-informatica-internet.php'; ?>
                 </article>

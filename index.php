@@ -17,16 +17,16 @@
 </head>
 <body id="body-topo">
     <main>
-        <header class="header-top">
+        <header id="header-top" class="header-top">
             <div class="grid">
                 <div class="row">
                     <div class="cl-m-3 cl-g-2">
                         <figure class="header-logo">
-                            <a href="#body-topo" class="sroll-auto">
+                            <a href="#body-topo" onclick="header.scrollLink(this,event)">
                                 <img src="images/logo-antony-charles.png"/>
                             </a>
                         </figure>
-                        <div id="header-button" class="header-button">
+                        <div id="header-button" class="header-button" onclick="header.changeMenuMobile()">
                             <div class="bar1"></div>
                             <div class="bar2"></div>
                             <div class="bar3"></div>
@@ -35,11 +35,21 @@
                     <div class="cl-m-9 cl-g-10 header-mobile-show">
                         <nav class="header-nav">
                             <ul class="header-nav-ul">
-                                <li><a href="#quem-sou" class="sroll-auto"><?= langs('links.Sobre'); ?></a></li>
-                                <li><a href="#formacao-academica" class="sroll-auto"><?= langs('links.Formacao'); ?></a></li>
-                                <li><a href="#experiencia-profissional" class="sroll-auto"><?= langs('links.Experiencia'); ?></a></li>
-                                <li><a href="#projetos" class="sroll-auto"><?= langs('links.Projetos'); ?></a></li>
-                                <li><a href="#cursos-extras" class="sroll-auto"><?= langs('links.CursosExtras'); ?></a></li>
+                                <li>
+                                    <a href="#quem-sou" onclick="header.scrollLink(this,event)"><?= langs('links.Sobre'); ?></a>
+                                </li>
+                                <li>
+                                    <a href="#formacao-academica" onclick="header.scrollLink(this,event)"><?= langs('links.Formacao'); ?></a>
+                                </li>
+                                <li>
+                                    <a href="#experiencia-profissional" onclick="header.scrollLink(this,event)"><?= langs('links.Experiencia'); ?></a>
+                                </li>
+                                <li>
+                                    <a href="#projetos" onclick="header.scrollLink(this,event)"><?= langs('links.Projetos'); ?></a>
+                                </li>
+                                <li>
+                                    <a href="#cursos-extras" onclick="header.scrollLink(this,event)"><?= langs('links.CursosExtras'); ?></a>
+                                </li>
                             </ul>
                         </nav>
                     </div>

@@ -13,5 +13,5 @@ return [
     'MeuCel' => '(11) 94531-5218',
     'MeuCelLink' => '+5511945315218',
     'MeuGitHub' => 'https://github.com/antonyCharles',
-    'MeuLinkedin' => 'https://www.linkedin.com/in/antony-charles-27a611119/',
+    'MeuLinkedin' => 'https://www.linkedin.com/in/antony-charles-lima-reis',
 ];

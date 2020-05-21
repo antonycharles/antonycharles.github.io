@@ -33,7 +33,7 @@
                     <div class="row">
                         <div class="cl-12">
                             <button class="btn btn-secondary"><i class="fas fa-plus"></i> <?= langs('links.Informacao'); ?></button>
-                            <button class="btn btn-primary"><i class="fas fa-external-link-alt"></i> <?= langs('links.Acessar'); ?></button>
+                            <button class="btn btn-info"><i class="fas fa-external-link-alt"></i> <?= langs('links.Acessar'); ?></button>
                             <button class="btn btn-success"><i class="fab fa-github"></i> <?= langs('links.Codigo'); ?></button>
                         </div>
                     </div>

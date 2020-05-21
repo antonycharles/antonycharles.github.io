@@ -1,12 +1,20 @@
 <div id="md-dot-net" class="modal md-small md-azul">
     <div class="modal-content">
-        <span class="close"><i class="fas fa-times"></i></span>
+        <span class="close" onclick="modal.closeModal(this)">
+            <i class="fas fa-times"></i>
+        </span>
         <h3 class="modal-header"><img src="images/icones/hashtag.png" title="<?= langs('title.DotNet'); ?>"/> <?= langs('title.DotNet'); ?></h3>
         <div class="row">
             <div class="cl-12">
-                <p>Com o .NET consigo desenvolver aplicações Web, usando a linguagem C#, desenvolvendo aplicações MVC, Apis e Console. Sempre buscando aplicar as boas práticas de programação em C# e fazendo testes.</p>
-                <span class="span">Experiência profissional com a tecnologia:</span>
-                <p>Tenho 1 ano e 6 meses de experiencia trabalhando com as tecnologias .Net na empresa Atento, durante este tempo realizei manutenção em sistemas já existentes, consumo de Apis internas e externas, criação de scripts de automação e elaboração de dashboards.</p>
+                <p>Dentro da plataforma .NET consigo desenvolver aplicações web, usando a linguagem C#, desenvolvendo aplicações MVC, apis e console, aplicando as boas práticas de programação com a linguagem C#.</p>
+                <span class="span"><?= langs('profissional.title'); ?>:</span>
+                <button class="btn btn-success btn-block" onclick="modal.openModal(this)" data-modal="md-experiencia-atento">
+                    <?= langs('profissional.Atento'); ?> - 1 anos, 4 meses e 26 dias
+                </button>
+                <span class="span"><?= langs('cursos.title'); ?>:</span>
+                <button class="btn btn-info btn-block" onclick="modal.openModal(this)" data-modal="md-formacao-dotnet-alura">
+                    <?= langs('cursos.titleFormacaoC'); ?>
+                </button>
                 <span class="span">Tags:</span>
                 <ul class="list list-projetos">
                     <li>C#</li>
@@ -21,6 +29,9 @@
                     <li>Testes em C#</li>
                     <li>ASP.NET: Razor</li>
                     <li>ASP.NET Identity</li>
+                    <li>NHivernate</li>
+                    <li>Entity</li>
+                    <li>Linq</li>
                     <li>Visual Studio</li>
                     <li>Visual Studio Code</li>
                 </ul>
