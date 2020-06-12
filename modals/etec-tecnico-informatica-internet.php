@@ -3,7 +3,7 @@
         <span class="close" onclick="modal.closeModal(this)">
             <i class="fas fa-times"></i>
         </span>
-        <h3 class="modal-header"> <img src="images/icones/reward-cinza.png"/> <?= langs('formacao.TecnicoInformatico'); ?></h3>
+        <h3 class="modal-header"> <img src="images/icones/reward-cinza.png" alt="<?= langs('formacao.TecnicoInformatico'); ?>"/> <?= langs('formacao.TecnicoInformatico'); ?></h3>
         <div class="row">
             <div class="cl-g-9 padding-right-30">
                 <span><?= langs('label.MatrizCurricular'); ?></span>
@@ -124,7 +124,7 @@
             <div class="cl-g-3">
                 <ul>
                     <li>
-                        <img src="images/etec-lauro-gomes.jpeg" class="logo" title="Logo Etec Lauro Gomes"/>
+                        <img src="images/etec-lauro-gomes.jpeg" class="logo" alt="Logo Etec Lauro Gomes"/>
                     </li>
                     <li>
                         <span><?= langs('label.Instituicao'); ?></span>

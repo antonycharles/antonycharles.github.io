@@ -22,7 +22,7 @@ return [
     'Sql' => 'SQL',
     'SqlServer' => 'Sql Server',
     'Ssis' => 'SSIS',
-    'title' => 'Portfólio - Antony Charles',
+    'title' => 'Antony Charles - Portfólio Desenvolvedor Web',
     'Web' => 'Web',
     'Wordpress' => 'WordPress'
 ];

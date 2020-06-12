@@ -3,7 +3,7 @@
         <span class="close" onclick="modal.closeModal(this)">
             <i class="fas fa-times"></i>
         </span>
-        <h3 class="modal-header"><img src="images/icones/hashtag.png" title="<?= langs('title.DotNet'); ?>"/> <?= langs('title.DotNet'); ?></h3>
+        <h3 class="modal-header"><img src="images/icones/hashtag.png" alt="<?= langs('title.DotNet'); ?>"/> <?= langs('title.DotNet'); ?></h3>
         <div class="row">
             <div class="cl-12">
                 <p>Dentro da plataforma .NET consigo desenvolver aplicações web, usando a linguagem C#, desenvolvendo aplicações MVC, apis e console, aplicando as boas práticas de programação com a linguagem C#.</p>
@@ -34,6 +34,8 @@
                     <li>Linq</li>
                     <li>Visual Studio</li>
                     <li>Visual Studio Code</li>
+                    <li>xUnit</li>
+                    <li>Moq</li>
                 </ul>
             </div>
         </div>

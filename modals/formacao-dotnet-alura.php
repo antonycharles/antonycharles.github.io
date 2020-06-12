@@ -4,14 +4,14 @@
         <header>
             <h2><?= langs('cursos.titleFormacaoC'); ?></h2>
             <figure>
-                <img src="images/icones/083-video-conference.png" title="<?= langs('cursos.titleFormacaoC'); ?>"/>
+                <img src="images/icones/083-video-conference.png" alt="<?= langs('cursos.titleFormacaoC'); ?>"/>
             </figure>
             <div class="overlay">
                 <div class="text"><i class="fas fa-plus-circle"></i><?= langs('links.Informacao'); ?></div>
             </div>
         </header>
     </div>
-    <div id="md-formacao-dotnet-alura" class="modal md-small md-vermelho-2">
+    <div id="md-formacao-dotnet-alura" class="modal md-small md-azul-2">
         <div class="modal-content">
             <span class="close" onclick="modal.closeModal(this)">
                 <i class="fas fa-times"></i>
@@ -32,10 +32,18 @@
                         <li>C# parte 7: Array e tipos genéricos</li>
                         <li>C# parte 8: List &lt;T&gt;, lambda, linq</li>
                         <li>C# Parte 9: Entrada e saída (I/O) com streams</li>
-                        <li>Entity Framework Core: Banco de dados de forma eficiente</li>
                         <li>Asp.NET Core: Uma webapp usando o padrão MVC</li>
                         <li>ASP.NET Core parte 1: Um e-Commerce com MVC e EF Core</li>
                         <li>ASP.NET Core parte 2: Um e-Commerce com MVC e EF Core</li>
+                        <li>ASP.NET Core Parte 3: Identity</li>
+                        <li>ASP.NET Core Parte 4: IdentityServer</li>
+                        <li>NHibernate: Persistência de dados com C#</li>
+                        <li>Entity Framework Core: Banco de dados de forma eficiente</li>
+                        <li>C#: Testes de unidade e TDD com xUnit</li>
+                        <li>Mocks em C#: Testes de Integração com xUnit e Moq</li>
+                        <li>Design Patterns C# I: Boas práticas de programação</li>
+                        <li>Design Patterns C# II: Boas práticas de programação</li>
+                        <li>SOLID com C#: Orientação a Objetos com C#</li>
                     </ul>
                 </div>
             </div>

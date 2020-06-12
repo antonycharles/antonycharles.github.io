@@ -23,6 +23,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,secti
 img{max-width: 100%;width: auto;}
 h1,h2,h3,h4,h5,h6{
     font-family: 'Audiowide', sans-serif;
+    line-height: 1.5;
 }
 li,p,i,b,td,th,tr,span{
     font-family: 'Arial', sans-serif;
@@ -32,11 +33,13 @@ a{
 }
 p{
     color:#4a4a4a;
-    margin-top:0px;
+    line-height: 1.5;
+    margin-bottom: 15px;
 }
 span{
     font-size: 0.7em;
     font-weight: 900;
+    transition:0.5s;
 }
 ul{
     margin:0px;
@@ -47,7 +50,7 @@ ul li{
     margin-bottom: 15px;
 }
 ul li p{
-    margin:0px;
+    margin-top:5px;
 }
 
 .grid{
@@ -169,7 +172,7 @@ ul li p{
 }
 .btn{
     border:none;
-    border-radius: 3px;
+    border-radius: 0px;
     color: #fff;
     cursor: pointer;
     font-family: 'Audiowide', sans-serif;
@@ -226,6 +229,7 @@ ul li p{
     display:inline-block;
     margin:auto;
 }
+
 .header-logo img{
     width: 120px;
     margin-bottom: -4px;
@@ -285,38 +289,35 @@ ul li p{
 
 .banner{
     background-color: #7a82ab;
-    box-shadow: 0px 0px 30px 0px #0000008c inset;
-    min-height: 400px;
+    min-height: 600px;
     overflow: hidden;
-    padding-bottom: 60px;
-    padding-top: 55px;
     position: relative;
     text-align: center;
 }
 .banner-text{
+    background-color: #7a82ab57;
     display: inline-block;
     left:50%;
     margin-right: -50%;
+    padding:5px 10px;
     position:absolute;
     text-align: center;
     top:50%;
     transform: translate(-50%, -50%);
     z-index: 9999;
 }
-.banner h1{
+.banner h2{
     color:#FFF;
-    font-size: 1.7em;
+    font-size: 1.6em;
     letter-spacing: 2px;
     margin:0px;
-    margin-top: 45px;
-    padding:0px;
     text-align: center;
     text-shadow: 2px 2px 4px #000000;
 }
 .banner h4{
     color:#FFF;
     font-family: 'Arial', sans-serif;
-    font-size: 1.3em;
+    font-size: 0.9em;
     font-weight: 800;
     letter-spacing: 2px;
     text-align: center;
@@ -339,7 +340,7 @@ ul li p{
     padding:40px 0px;
 }
 .quem-sou{
-    padding-bottom: 30px;
+    padding: 20px 0px;
 }
 .quem-sou h2{
     color:#ecb200;
@@ -359,8 +360,15 @@ ul li p{
     margin-bottom: 5px;
 }
 .quem-sou .contatos figure img{
-    width: 140px;
+    box-shadow: 10px 10px #17a2b8, -12px -12px #dcb239, 22px -22px #7a86ae, -24px 24px #73956f;
+    margin-bottom: 37px;
+    width: 200px;
+    transition: 2s;
 }
+.quem-sou .contatos figure img:hover{
+    box-shadow:2px 2px #17a2b8, -2px -2px #dcb239, 2px -2px #7a86ae, -2px 2px #73956f;
+}
+
 .quem-sou .contatos p a{
     color:#4f4d4d;
     font-family: 'Audiowide', sans-serif;
@@ -554,12 +562,10 @@ ul li p{
 }
 .formacao-item span{
     color:#73956f;
-    margin-bottom: 5px;
     display: inline-block;
 }
 .bar-progresso{
-    border:2px solid #4a4a4a;
-    border-radius: 5px;
+    background-color: #DEDEDE;
     height: 25px;
     margin-bottom: 15px;
     margin-top: 5px;
@@ -679,7 +685,7 @@ ul li p{
     background-color: #343535;
     color:#FFF;
     left:0px;
-    padding: 1px 7px;
+    padding: 5px;
     position: absolute;
     top:0px;
     width: 150px;
@@ -749,7 +755,7 @@ ul li p{
 
 .list li{
     border: 1px solid #d7d7d7;
-    border-radius:5px;
+    border-radius:2px;
     display:inline-block;
     font-family: 'Audiowide', sans-serif;
     margin: 5px;
@@ -774,7 +780,6 @@ ul li p{
     padding: 25px 0px;
 }
 .box-contatos .btn{
-    border:1px solid #000000;
     font-size: 1em;
     text-transform: none;
     margin-top: 40px;
@@ -854,6 +859,7 @@ ul li p{
 }
 .modal span{
     font-size: 0.8em;
+    margin-bottom:5px;
 }
 .modal .modal-header{
     border-bottom: 1px solid #DEDEDE;
@@ -986,15 +992,17 @@ table {
   
   td, th {
     border: 1px solid #dddddd;
-    text-align: left;
+    vertical-align: middle;
     padding: 8px;
   }
   
   tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: #f7f7f7;
   }
 
-
+span:hover, .span:hover{
+    font-size:1em;
+}
 
 @media (min-width: 500px) {
     .box-title{
@@ -1002,6 +1010,7 @@ table {
     }
     .quem-sou h2{
         font-size: 2.2em;
+        margin-bottom: 25px;
     }
     .formacao-item header h2,.projetos-item header h2,.experiencia-item header h2{
         font-size: 1.5em;
@@ -1016,7 +1025,7 @@ table {
 }
 
 @media (min-width: 540px) {
-    .banner h1{
+    .banner h2{
         font-size: 2.0em;
     }
 }
@@ -1066,9 +1075,12 @@ table {
 }
 
 @media(min-width:960px){
-    .banner h1{
+    .banner h2{
         font-size: 2.7em;
         margin:0px;
+    }
+    .banner h4{
+        font-size: 1.2em;
     }
     .experiencia-item.margin-right,.experiencia-item.margin-left,.formacao-item.margin-left,.formacao-item.margin-right{
         margin:0;

@@ -3,7 +3,7 @@
         <span class="close" onclick="modal.closeModal(this)">
             <i class="fas fa-times"></i>
         </span>
-        <h3 class="modal-header"> <img src="images/icones/reward-cinza.png"/> <?= langs('formacao.InformaticaNegocio'); ?></h3>
+        <h3 class="modal-header"> <img src="images/icones/reward-cinza.png" alt="<?= langs('formacao.InformaticaNegocio'); ?>"/> <?= langs('formacao.InformaticaNegocio'); ?></h3>
         <div class="row">
             <div class="cl-g-9 padding-right-30">
                 <span><?= langs('label.MatrizCurricular'); ?></span>
@@ -119,8 +119,8 @@
                             </tfoot>
                         </table>
                     </div>
-                    <button class="accordion active" onclick="accordion.changePanel(this)">4º <?= langs('label.Semestre'); ?></button>
-                    <div class="panel" style="display:block">
+                    <button class="accordion" onclick="accordion.changePanel(this)">4º <?= langs('label.Semestre'); ?></button>
+                    <div class="panel">
                         <table>
                             <thead>
                                 <tr>
@@ -137,7 +137,7 @@
                             <tbody>
                                 <?php foreach(langs('formacao.AFatecINSemestreQuatro') as $value){ ?>
                                     <tr>
-                                        <td class="text-center"><i class="fas fa-hourglass-half"></i></td>
+                                        <td class="text-center"><i class="fas fa-check"></i></td>
                                         <td><?= $value['disciplina']; ?></td>
                                         <td class="text-center"><?= $value['teoria']; ?></td>
                                         <td class="text-center"><?= $value['pratica']; ?></td>
@@ -156,8 +156,8 @@
                             </tfoot>
                         </table>
                     </div>
-                    <button class="accordion" onclick="accordion.changePanel(this)">5º <?= langs('label.Semestre'); ?></button>
-                    <div class="panel">
+                    <button class="accordion active" onclick="accordion.changePanel(this)">5º <?= langs('label.Semestre'); ?></button>
+                    <div class="panel" style="display:block">
                         <table>
                             <thead>
                                 <tr>
@@ -174,7 +174,7 @@
                             <tbody>
                                 <?php foreach(langs('formacao.AFatecINSemestreCinco') as $value){ ?>
                                     <tr>
-                                        <td class="text-center"><i class="fas fa-minus"></i></td>
+                                        <td class="text-center"><i class="fas fa-hourglass-half"></i></td>
                                         <td><?= $value['disciplina']; ?></td>
                                         <td class="text-center"><?= $value['teoria']; ?></td>
                                         <td class="text-center"><?= $value['pratica']; ?></td>
@@ -235,7 +235,7 @@
             <div class="cl-g-3">
                 <ul>
                     <li>
-                        <img src="images/fatec-sao-bernardo-campo.jpg" class="logo" title="Logo Fatec São Bernardo do Campo" />
+                        <img src="images/fatec-sao-bernardo-campo.jpg" class="logo" alt="Logo Fatec São Bernardo do Campo" />
                     </li>
                     <li>
                         <span><?= langs('label.Instituicao'); ?></span>

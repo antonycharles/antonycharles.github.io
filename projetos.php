@@ -6,7 +6,7 @@
                 <article class="projetos-item margin-right">
                     <header>
                         <figure>
-                            <img src="images/projetos/logo-miniapps.png" title=""/>
+                            <img src="images/projetos/logo-miniapps.png" alt=""/>
                         </figure>
                         <div>
                             <h2><?= langs('projetos.title') ?></h2>
@@ -43,7 +43,7 @@
                 <article class="projetos-item margin-left">
                     <header>
                         <figure>
-                            <img src="images/projetos/logo-miniapps.png" title=""/>
+                            <img src="images/projetos/logo-miniapps.png" alt=""/>
                         </figure>
                         <div>
                             <h2><?= langs('projetos.title') ?></h2>

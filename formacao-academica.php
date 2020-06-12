@@ -6,7 +6,7 @@
                 <article class="formacao-item margin-right">
                     <header>
                         <figure>
-                            <img src="images/icones/reward-cinza.png" title="<?= langs('formacao.InformaticaNegocio'); ?>"/>
+                            <img src="images/icones/reward-cinza.png" alt="<?= langs('formacao.InformaticaNegocio'); ?>"/>
                         </figure>
                         <div>
                             <h2><?= langs('formacao.InformaticaNegocio'); ?></h2>
@@ -67,7 +67,7 @@
                 <article class="formacao-item margin-left">
                     <header>
                         <figure>
-                            <img src="images/icones/reward-verde.png" title="<?= langs('formacao.TecnicoInformatico'); ?>"/>
+                            <img src="images/icones/reward-verde.png" alt="<?= langs('formacao.TecnicoInformatico'); ?>"/>
                         </figure>
                         <div>
                             <h2><?= langs('formacao.TecnicoInformatico'); ?></h2>

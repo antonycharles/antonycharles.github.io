@@ -14,17 +14,17 @@ class Header{
 			top: document.querySelector(item).offsetTop - 35, 
 			behavior: 'smooth'
 		});
-		document.querySelector('#header-button').click();
+		if(ahref.dataset.logo == undefined){
+			document.querySelector('#header-button').click();
+		}
 	}
 
 	changeMenuMobile(){
-		let itens = $$(".header-mobile-show");
-		let displayValue = getComputedStyle(itens[0]).display == 'none' ? 'block' : 'none';
-		itens.forEach(el => {
-			el.style.display = displayValue;
-		});
+		let itens = document.querySelector(".header-mobile-show");
+		let displayValue = itens.style.display == 'none' ? 'block' : 'none';
+		itens.style.display = displayValue;
 
-		let button = $(".header-button");
+		let button = document.querySelector(".header-button");
 		if(displayValue == 'block'){
 			button.classList.add("change");
 		}else{
@@ -64,36 +64,6 @@ class Accordion{
     }
 }
 
-class BannerAnimado{
-	start() { 
-		for(var i = 0; i < 400; i++){
-			var div = document.createElement("DIV");
-			div.classList.add("banner-bl");
-			document.getElementById("banner").appendChild(div);
-			this.startBl(div);
-			BannerAnimado.loopBl(div);
-		}
-	}
-
-	startBl(div){
-		setTimeout(function(){
-			BannerAnimado.changeTopLeftBl(div);
-		 },Math.floor(Math.random() * 5000));
-	}
-
-	static loopBl(div){
-		setTimeout(function(){ 
-			BannerAnimado.changeTopLeftBl(div);
-			BannerAnimado.loopBl(div);
-		}, 5000 + Math.floor(Math.random() * 3000));
-	}
-
-	static changeTopLeftBl(div){
-		div.style.top =  Math.floor(Math.random() * 100) + "%";
-		div.style.left = Math.floor(Math.random() * 100) + "%";
-	}
-}
-
 var accordion = new Accordion();
 
 var header = new Header();
@@ -103,6 +73,39 @@ var modal = new Modal();
 window.onclick = function(event){modal.closeModalOnclickWindow(event);}
 
 document.querySelector("body").onload = function() {
-	let animacao = new BannerAnimado();
-	animacao.start();
+	var c = document.getElementById("animacao");
+	var ctx = c.getContext("2d");
+
+	c.height = document.getElementById("banner").offsetHeight;
+	c.width = document.getElementById("banner").offsetWidth;
+
+	var chinese = "田由甲申甴电甶男甸甹町画甼甽甾甿畀畁畂畃畄畅畆畇畈畉畊畋界畍畎畏畐畑";
+	chinese = chinese.split("");
+
+	var font_size = 16;
+	var columns = c.width/font_size;
+	var drops = [];
+
+	for(var x = 0; x < columns; x++)
+		drops[x] = 1; 
+
+	function draw()
+	{
+		ctx.fillStyle = "rgba(122, 130, 171, 0.2)";
+		ctx.fillRect(0, 0, c.width, c.height);
+		
+		ctx.fillStyle = "#FFF";
+		ctx.font = font_size + "px arial";
+		for(var i = 0; i < drops.length; i++)
+		{
+			var text = chinese[Math.floor(Math.random()*chinese.length)];
+			ctx.fillText(text, i*font_size, drops[i]*font_size);
+			if(drops[i]*font_size > c.height && Math.random() > 0.975)
+				drops[i] = 0;
+			
+			drops[i]++;
+		}
+	}
+
+	setInterval(draw, 50);
 };

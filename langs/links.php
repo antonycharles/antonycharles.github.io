@@ -7,7 +7,7 @@ return [
     'Formacao' => 'FORMAÇÃO',
     'Experiencia' => 'EXPERIÊNCIA',
     'Projetos' => 'PROJETOS',
-    'CursosExtras' => 'CURSOS EXTRAS',
+    'Outros' => 'OUTROS',
     'Informacao' => 'INFORMAÇÃO',
     'MeuEmail' => 'charles_aclr@yahoo.com.br',
     'MeuCel' => '(11) 94531-5218',

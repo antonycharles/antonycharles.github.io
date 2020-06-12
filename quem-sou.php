@@ -12,7 +12,7 @@
                 <div class="cl-12 cl-g-5 text-center">
                     <div class="contatos">
                         <figure>
-                            <img src="images/antony-charles.png"/>
+                            <img src="images/antony-charles.png" alt="Antony Charles"/>
                         </figure>
                         <p><a href="mailto:<?= langs('links.MeuEmail'); ?>" title="<?= langs('links.MeuEmail'); ?>" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i> <?= langs('links.MeuEmail'); ?></a></p>
                         <p><a href="tel:<?= langs('links.MeuCelLink'); ?>" title="<?= langs('links.MeuCel'); ?>" target="_blank"><i class="fas fa-phone" aria-hidden="true"></i> <?= langs('links.MeuCel'); ?></a></p>
@@ -31,49 +31,9 @@
     </article>
     <div class="grid">
         <div class="flex-container-tecno">
-            <aside class="item" onclick="modal.openModal(this)" data-modal="md-dot-net">
-                <figure>
-                    <img src="images/icones/hashtag.png" title="<?= langs('title.Net'); ?>"/>
-                    <figcaption><?= langs('title.Net'); ?></figcaption>
-                </figure>
-                <div class="overlay">
-                    <div class="text"><i class="fas fa-plus-circle"></i><?= langs('links.Informacao'); ?></div>
-                </div>
-            </aside>
-            <?php include 'modals/dot-net.php';?>
-            <aside class="item" onclick="modal.openModal(this)" data-modal="md-javascript">
-                <figure>
-                    <img src="images/icones/javascript.png" title="<?= langs('title.JavaScript'); ?>"/>
-                    <figcaption><?= langs('title.JavaScript'); ?></figcaption>
-                </figure>
-                <div class="overlay">
-                    <div class="text"><i class="fas fa-plus-circle"></i><?= langs('links.Informacao'); ?></div>
-                </div>
-            </aside>
-            <?php include 'modals/javascript.php'; ?>
-            <aside class="item" onclick="modal.openModal(this)" data-modal="md-java">
-                <figure>
-                    <img src="images/icones/java.png" title="<?= langs('title.Java'); ?>"/>
-                    <figcaption><?= langs('title.Java'); ?></figcaption>
-                </figure>
-                <div class="overlay">
-                    <div class="text"><i class="fas fa-plus-circle"></i><?= langs('links.Informacao'); ?></div>
-                </div>
-            </aside>
-            <?php include 'modals/java.php'; ?>
-            <aside class="item" onclick="modal.openModal(this)" data-modal="md-php">
-                <figure>
-                    <img src="images/icones/elephant.png" title="<?= langs('title.Php'); ?>"/>
-                    <figcaption><?= langs('title.Php'); ?></figcaption>
-                </figure>
-                <div class="overlay">
-                    <div class="text"><i class="fas fa-plus-circle"></i><?= langs('links.Informacao'); ?></div>
-                </div>
-            </aside>
-            <?php include 'modals/php.php'; ?>
             <aside class="item" onclick="modal.openModal(this)" data-modal="md-html">
                 <figure>
-                    <img src="images/icones/html-5.png" title="<?= langs('title.Html'); ?>"/>
+                    <img src="images/icones/html-5.png" alt="<?= langs('title.Html'); ?>"/>
                     <figcaption><?= langs('title.Html'); ?>/<?= langs('title.Css'); ?></figcaption>
                 </figure>
                 <div class="overlay">
@@ -81,9 +41,49 @@
                 </div>
             </aside>
             <?php include 'modals/html.php'; ?>
+            <aside class="item" onclick="modal.openModal(this)" data-modal="md-javascript">
+                <figure>
+                    <img src="images/icones/javascript.png" alt="<?= langs('title.JavaScript'); ?>"/>
+                    <figcaption><?= langs('title.JavaScript'); ?></figcaption>
+                </figure>
+                <div class="overlay">
+                    <div class="text"><i class="fas fa-plus-circle"></i><?= langs('links.Informacao'); ?></div>
+                </div>
+            </aside>
+            <?php include 'modals/javascript.php'; ?>
+            <aside class="item" onclick="modal.openModal(this)" data-modal="md-dot-net">
+                <figure>
+                    <img src="images/icones/hashtag.png" alt="<?= langs('title.Net'); ?>"/>
+                    <figcaption><?= langs('title.Net'); ?></figcaption>
+                </figure>
+                <div class="overlay">
+                    <div class="text"><i class="fas fa-plus-circle"></i><?= langs('links.Informacao'); ?></div>
+                </div>
+            </aside>
+            <?php include 'modals/dot-net.php';?>
+            <aside class="item" onclick="modal.openModal(this)" data-modal="md-php">
+                <figure>
+                    <img src="images/icones/elephant.png" alt="<?= langs('title.Php'); ?>"/>
+                    <figcaption><?= langs('title.Php'); ?></figcaption>
+                </figure>
+                <div class="overlay">
+                    <div class="text"><i class="fas fa-plus-circle"></i><?= langs('links.Informacao'); ?></div>
+                </div>
+            </aside>
+            <?php include 'modals/php.php'; ?>
+            <aside class="item" onclick="modal.openModal(this)" data-modal="md-java">
+                <figure>
+                    <img src="images/icones/java.png" alt="<?= langs('title.Java'); ?>"/>
+                    <figcaption><?= langs('title.Java'); ?></figcaption>
+                </figure>
+                <div class="overlay">
+                    <div class="text"><i class="fas fa-plus-circle"></i><?= langs('links.Informacao'); ?></div>
+                </div>
+            </aside>
+            <?php include 'modals/java.php'; ?>
             <!--<aside class="item" onclick="modal.openModal(this)" data-modal="md-css">
                 <figure>
-                    <img src="images/icones/css.png" title="<?= langs('title.Css'); ?>"/>
+                    <img src="images/icones/css.png" alt="<?= langs('title.Css'); ?>"/>
                     <figcaption><?= langs('title.Css'); ?></figcaption>
                 </figure>
                 <div class="overlay">
@@ -93,7 +93,7 @@
             <?php include 'modals/css.php'; ?>
             <aside class="item" onclick="modal.openModal(this)" data-modal="md-sql">
                 <figure>
-                    <img src="images/icones/sql.png" title="<?= langs('title.Sql'); ?>"/>
+                    <img src="images/icones/sql.png" alt="<?= langs('title.Sql'); ?>"/>
                     <figcaption><?= langs('title.Sql'); ?></figcaption>
                 </figure>
                 <div class="overlay">

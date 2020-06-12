@@ -6,7 +6,7 @@
                 <article class="experiencia-item margin-right">
                     <header>
                         <figure>
-                            <img src="images/icones/suitcase-cinza.png" title="<?= langs('profissional.AnalistaProgramador'); ?>"/>
+                            <img src="images/icones/suitcase-cinza.png" alt="<?= langs('profissional.AnalistaProgramador'); ?>"/>
                         </figure>
                         <div>
                             <h2><?= langs('profissional.AnalistaProgramador'); ?></h2>
@@ -65,7 +65,7 @@
                             <span class="close" onclick="modal.closeModal(this)">
                                 <i class="fas fa-times"></i>
                             </span>
-                            <h3 class="modal-header"><img src="images/icones/suitcase-cinza.png" title="Analista Programador Júnior"/> Analista Programador Júnior</h3>
+                            <h3 class="modal-header"><img src="images/icones/suitcase-cinza.png" alt="Analista Programador Júnior"/> Analista Programador Júnior</h3>
                             <div class="row">
                                 <div class="cl-g-8">
                                     <p>O Tecnólogo em Informática para Negócios é o profissional capaz de buscar as melhores oportunidades de negócio, analisar tendências e encontrar novos caminhos para a empresa. O principal diferencial desse profissional é criar estratégias para viabilizar o alinhamento da Tecnologia da <?= langs('links.Informacao'); ?> à Gestão de Negócios. </p>
@@ -107,7 +107,7 @@
                 <article class="experiencia-item margin-left">
                     <header>
                         <figure>
-                            <img src="images/icones/suitcase-cinza.png" title=""/>
+                            <img src="images/icones/suitcase-cinza.png" alt=""/>
                         </figure>
                         <div>
                             <h2><?= langs('profissional.ProgramadorWeb'); ?></h2>
@@ -165,7 +165,7 @@
                             <span class="close" onclick="modal.closeModal(this)">
                                 <i class="fas fa-times"></i>
                             </span>
-                            <h3 class="modal-header"><img src="images/icones/suitcase-cinza.png" title="Programador Web"/> Programador Web</h3>
+                            <h3 class="modal-header"><img src="images/icones/suitcase-cinza.png" alt="Programador Web"/> Programador Web</h3>
                             <div class="row">
                                 <div class="cl-g-8">
                                     <p>O Tecnólogo em Informática para Negócios é o profissional capaz de buscar as melhores oportunidades de negócio, analisar tendências e encontrar novos caminhos para a empresa. O principal diferencial desse profissional é criar estratégias para viabilizar o alinhamento da Tecnologia da <?= langs('links.Informacao'); ?> à Gestão de Negócios. </p>

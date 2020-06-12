@@ -1,6 +1,6 @@
 <?php
 return [
-    'title' => 'Cursos Extras',
+    'title' => 'Outros',
 
     'titleFormacaoC' => 'Formação .NET - Alura',
 ];
