@@ -23,6 +23,8 @@ return [
     'SqlServer' => 'Sql Server',
     'Ssis' => 'SSIS',
     'title' => 'Antony Charles - Portfólio Desenvolvedor Web',
+    'visualStudio' => 'Visual Studio',
     'Web' => 'Web',
-    'Wordpress' => 'WordPress'
+    'Wordpress' => 'WordPress',
+    'formacaoJava' => 'Formação Java (cursando)'
 ];

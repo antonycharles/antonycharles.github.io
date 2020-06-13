@@ -19,11 +19,7 @@
             <h3 class="modal-header"><img src="images/icones/book.png"/> Segurança em Aplicações web</h3>
             <div class="row">
                 <div class="cl-12">
-                    <p></p>
-                    <span class="span">Lista de cursos:</span>
-                    <ul class="list list-projetos li-block">
-                        <li></li>
-                    </ul>
+                    <p>O livro <b>Segurança Em aplicações web</b> da editora <b>Casa do Código</b>, apresenta algumas das principais vulnerabilidade de aplicações web, explica como estas ameaças funcionam e como fazer para corrigir tais inseguranças.</p>
                 </div>
             </div>
         </div>

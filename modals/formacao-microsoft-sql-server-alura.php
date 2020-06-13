@@ -19,8 +19,7 @@
             <h3 class="modal-header"><img src="images/icones/083-video-conference.png"/> Formação Sql com Microsoft SQL Server 2017 - Alura</h3>
             <div class="row">
                 <div class="cl-12">
-                    <p>Conclui a Formação Microsoft SQL Server 2017 na plataforma Alura, onde realizei diversos cursos referentes a linguagem SQL no Sql Server.</p>
-                    <p>Estes cursos me ajudaram a ter um conhecimento melhor sobre o ambiente Sql Server assim como também a linguagem SQL.</p>
+                    <p>Conclui a Formação Microsoft SQL Server 2017 na plataforma Alura, realizei diversos cursos referentes a linguagem SQL dentro da plataforma Sql Server.</p>
                     <span class="span">Lista de cursos:</span>
                     <ul class="list list-projetos li-block">
                         <li>SQL Server: Introdução ao SQL com Microsoft SQL Server 2017</li>

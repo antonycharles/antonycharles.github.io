@@ -19,8 +19,7 @@
             <h3 class="modal-header"><img src="images/icones/083-video-conference.png"/> <?= langs('cursos.titleFormacaoC'); ?></h3>
             <div class="row">
                 <div class="cl-12">
-                    <p>Conclui a Formação .NET na plataforma Alura, onde realizei diversos cursos referentes a linguagem C# e também a plataforma .NET.</p>
-                    <p>Estes cursos me ajudaram a ter um conhecimento melhor sobre os conceitos e paradigmas do .NET, tanto na parte de desenvolvimento, boas práticas e testes.</p>
+                    <p>Conclui a Formação .NET na plataforma Alura, realizei diversos cursos referentes a linguagem C# e também a plataforma .NET.</p>
                     <span class="span">Lista de cursos:</span>
                     <ul class="list list-projetos li-block">
                         <li>C# parte 1: Primeiros passos</li>

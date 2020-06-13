@@ -19,11 +19,7 @@
             <h3 class="modal-header"><img src="images/icones/book.png"/> Desconstruindo a Web</h3>
             <div class="row">
                 <div class="cl-12">
-                    <p></p>
-                    <span class="span">Lista de cursos:</span>
-                    <ul class="list list-projetos li-block">
-                        <li></li>
-                    </ul>
+                    <p>O livro <b>Desconstruindo a Web</b> (As tecnologias por trás de uma requisição) da editora <b>Casa do Código</b>, apresenta todos os eventos que ocorrem em uma requisição HTTP, iniciando no navegador, passando pelo sistema operacional, passando pela rede e sendo processada pelo servidor.</p>
                 </div>
             </div>
         </div>

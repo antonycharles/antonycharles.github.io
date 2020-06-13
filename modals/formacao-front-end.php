@@ -19,7 +19,7 @@
             <h3 class="modal-header"><img src="images/icones/083-video-conference.png"/> Formação Front-End - Alura</h3>
             <div class="row">
                 <div class="cl-12">
-                    <p>Conclui a Formação Front-End na plataforma Alura, onde realizei diversos cursos referentes a Html, Css e Javascript.</p>
+                    <p>Conclui a Formação Front-End na plataforma Alura, realizei diversos cursos referentes ao Html, Css e Javascript.</p>
                     <span class="span">Lista de cursos:</span>
                     <ul class="list list-projetos li-block">
                         <li>HTML5 e CSS3 parte 1: A primeira página da Web</li>

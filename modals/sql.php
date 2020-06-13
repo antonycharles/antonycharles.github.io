@@ -8,7 +8,7 @@
         </h3>
         <div class="row">
             <div class="cl-12">
-                <p>Tenho um bom conhecimento da linguagem SQL, principalmente para armazenar, manipular e recuperar dados usando uma linguagem de programação como C#, Java ou PHP. Também consigo elaborar scripts para criação de um banco de dados e suas tabelas, fazendo o relacionamento através de PK e FK.</p>
+                <p>Tenho um bom conhecimento da linguagem SQL, principalmente para armazenar, manipular e recuperar dados usando uma linguagem de programação como C#, Java ou PHP. Também consigo elaborar scripts para criação de um banco de dados e suas tabelas.</p>
                 <span class="span"><?= langs('cursos.title'); ?>:</span>
                 <button class="btn btn-info btn-block" onclick="modal.openModal(this)" data-modal="md-formacao-microsoft-sql-server-alura">
                     Formação Sql com Microsoft SQL Server 2017 - Alura

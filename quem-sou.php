@@ -12,18 +12,8 @@
                 <div class="cl-12 cl-g-5 text-center">
                     <div class="contatos">
                         <figure>
-                            <img src="images/antony-charles.png" alt="Antony Charles"/>
+                            <img src="images/antony-charles.jpg" alt="Antony Charles"/>
                         </figure>
-                        <p><a href="mailto:<?= langs('links.MeuEmail'); ?>" title="<?= langs('links.MeuEmail'); ?>" target="_blank"><i class="fas fa-envelope" aria-hidden="true"></i> <?= langs('links.MeuEmail'); ?></a></p>
-                        <p><a href="tel:<?= langs('links.MeuCelLink'); ?>" title="<?= langs('links.MeuCel'); ?>" target="_blank"><i class="fas fa-phone" aria-hidden="true"></i> <?= langs('links.MeuCel'); ?></a></p>
-                        <ul>
-                            <li>
-                                <a href="<?= langs('links.MeuGitHub'); ?>" target="_blank"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
-                            </li>
-                            <li>
-                                <a href="<?= langs('links.MeuLinkedin'); ?>" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i> Linkedin</a>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>

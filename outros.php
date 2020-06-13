@@ -12,7 +12,7 @@
                 <?php include 'modals/formacao-microsoft-sql-server-alura.php'; ?>
             </div>
             <div class="cl-12 cl-m-6 cl-g-4">
-                <?php include 'modals/livro-introducao-arquitetura-design-software.php'; ?>
+                <?php include 'modals/livro-desconstruindo-a-web.php'; ?>
             </div>
             <div class="cl-12 cl-m-6 cl-g-4">
                 <?php include 'modals/formacao-front-end.php'; ?>
@@ -21,8 +21,11 @@
                 <?php include 'modals/livro-codigo-limpo.php'; ?>
             </div>
             <div class="cl-12 cl-m-6 cl-g-4">
-                <?php include 'modals/livro-desconstruindo-a-web.php'; ?>
+                <?php include 'modals/formacao-java.php'; ?>
             </div>
+            <!--<div class="cl-12 cl-m-6 cl-g-4">
+                <?php include 'modals/livro-introducao-arquitetura-design-software.php'; ?>
+            </div>-->
         </div>
     </div>
 </section>

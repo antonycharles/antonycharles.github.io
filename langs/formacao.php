@@ -1,6 +1,6 @@
 <?php
 return [
-    'title' => 'Formação Acadêmica',
+    'title' => 'Formação',
 
     //=================================================================================
     //  INFORMATICA PARA NEGOCIOS

@@ -9,8 +9,7 @@
         </h3>
         <div class="row">
             <div class="cl-12">
-                <p>Tenho bom conhecimento da linguagem de marcação padrão da web o HTML, fazendo o uso adequado das suas principais tags e respeitando as regras semânticas definidas pela W3c.</p>
-                <p>Também consigo fazer uso da linguagem Css para definir o estilo do HTML.</p>
+                <p>Com o Html/Css consigo desenvolver páginas para o Front-End, fazendo uso adequado das tags, respeitando as regras semânticas definidas pela W3C e aplicando o Css adequadamente para criar o layout esperado, tanto para desktop como para mobile.</p>
                 <span class="span"><?= langs('cursos.title'); ?>:</span>
                 <button class="btn btn-info btn-block" onclick="modal.openModal(this)" data-modal="md-formacao-front-end">
                     Formação Front-End

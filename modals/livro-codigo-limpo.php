@@ -19,11 +19,7 @@
             <h3 class="modal-header"><img src="images/icones/book.png"/> Clean Code</h3>
             <div class="row">
                 <div class="cl-12">
-                    <p></p>
-                    <span class="span">Lista de cursos:</span>
-                    <ul class="list list-projetos li-block">
-                        <li></li>
-                    </ul>
+                    <p>O livro <b>Clean Code</b> do autor Robert C. Marlin, apresenta diversos princípios, padrões e práticas para criar um código limpo. Proporcionando uma base de conhecimento que descreve a forma como pensamos quando criamos, lemos e limpamos um código.</p>
                 </div>
             </div>
         </div>

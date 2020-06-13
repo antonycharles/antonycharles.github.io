@@ -6,6 +6,7 @@ return [
     'DataAdmissao' => 'Data admissão:',
     'DataSaida' => 'Data saída:',
     'Descricao' => 'Descrição:',
+    'Destaque' => 'Destaque:',
     'DownloadCurriculo' => 'Download Currículo',
     'Duracao' => 'Duração:',
     'Empresa' => 'Empresa:',

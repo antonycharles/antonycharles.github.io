@@ -6,7 +6,7 @@
         <h3 class="modal-header"><img src="images/icones/hashtag.png" alt="<?= langs('title.DotNet'); ?>"/> <?= langs('title.DotNet'); ?></h3>
         <div class="row">
             <div class="cl-12">
-                <p>Dentro da plataforma .NET consigo desenvolver aplicações web, usando a linguagem C#, desenvolvendo aplicações MVC, apis e console, aplicando as boas práticas de programação com a linguagem C#.</p>
+                <p>Dentro da plataforma .NET, consigo desenvolver aplicações web usando a linguagem C#, criando aplicações <b>MVC</b> e <b>APIS</b>, aplicando as boas práticas de programação com a linguagem C#.</p>
                 <span class="span"><?= langs('profissional.title'); ?>:</span>
                 <button class="btn btn-success btn-block" onclick="modal.openModal(this)" data-modal="md-experiencia-atento">
                     <?= langs('profissional.Atento'); ?> - 1 anos, 4 meses e 26 dias
@@ -26,7 +26,7 @@
                     <li>NuGet</li>
                     <li>.NET para web</li>
                     <li>Persistência com .NET</li>
-                    <li>Testes em C#</li>
+                    <li>TDD C#</li>
                     <li>ASP.NET: Razor</li>
                     <li>ASP.NET Identity</li>
                     <li>NHivernate</li>
