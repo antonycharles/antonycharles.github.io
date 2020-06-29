@@ -1,0 +1,2002 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Antony Charles - Portfólio Desenvolvedor Web</title>
+    <link type="text/css" rel="stylesheet" href="css/reset.css"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet"/><!--font-family: 'Audiowide', sans-serif;-->
+    <script src="https://kit.fontawesome.com/3e96037d7e.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/favicons/android-chrome-192x192.png" sizes="192x192" type="image/png">
+    <link rel="icon" href="images/favicons/android-chrome-512x512.png" sizes="512x512" type="image/png">
+    <link rel="icon" href="images/favicons/apple-touch-icon.png" sizes="180x180" type="image/png">
+    <link rel="icon" href="images/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+</head>
+<body id="body-topo">
+    <header id="header-top" class="header-top">
+        <div class="grid">
+            <div class="row">
+                <div class="cl-m-3 cl-g-2">
+                    
+                    <figure class="header-logo">
+                        <a href="#body-topo" onclick="header.scrollLink(this,event)" data-logo="true">
+                            <h1><img src="images/logo-antony-charles.png" alt="Antony Charles"/></h1>
+                        </a>
+                    </figure>
+                    <div id="header-button" class="header-button" onclick="header.changeMenuMobile()">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
+                <div class="cl-m-9 cl-g-10 header-mobile-show" style="display:none">
+                    <nav class="header-nav">
+                        <ul class="header-nav-ul">
+                            <li>
+                                <a href="#quem-sou" onclick="header.scrollLink(this,event)">SOBRE</a>
+                            </li>
+                            <li>
+                                <a href="#formacao-academica" onclick="header.scrollLink(this,event)">FORMAÇÃO</a>
+                            </li>
+                            <li>
+                                <a href="#experiencia-profissional" onclick="header.scrollLink(this,event)">EXPERIÊNCIA</a>
+                            </li>
+                            <li>
+                                <a href="#projetos" onclick="header.scrollLink(this,event)">PROJETOS</a>
+                            </li>
+                            <li>
+                                <a href="#cursos-extras" onclick="header.scrollLink(this,event)">OUTROS</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <aside id="banner" class="banner">
+            <div class="banner-text">
+                <h2>Desenvolvedor Web!</h2>
+                <h4>Criando soluções para o amanhã!</h4>
+            </div>
+            <canvas id="animacao"></canvas>
+        </aside>
+        <section class="box-quem-sou">
+            <article id="quem-sou" class="quem-sou">
+                <div class="grid">
+                    <div class="row">
+                        <div class="cl-12 cl-g-7">
+                            <header>
+                                <h2><span>QUEM SOU</span> Antony Charles</h2>
+                            </header>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue nisi, tempus dignissim mauris nec, sodales porta turpis. Duis dignissim, ex non dapibus luctus, erat purus ornare enim, ac condimentum turpis nunc sit amet nulla. Phasellus consequat ultrices arcu, vel viverra nulla porta sed. Pellentesque dapibus eget enim quis molestie. Nunc sollicitudin sagittis lorem, eu convallis quam placerat eget. </p>
+                            <p>Aenean nec enim elementum, dictum lorem vitae, consequat felis. Phasellus porta dapibus magna, non elementum metus tincidunt sit amet. Proin id varius turpis. Nunc rhoncus cursus ex sed fringilla. Nullam in egestas purus, non dignissim quam. In hac habitasse platea dictumst.</p>
+                        </div>
+                        <div class="cl-12 cl-g-5 text-center">
+                            <div class="contatos">
+                                <figure>
+                                    <img src="images/antony-charles.jpg" alt="Antony Charles"/>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <div class="grid">
+                <div class="flex-container-tecno">
+                    <aside class="item" onclick="modal.openModal(this)" data-modal="md-html">
+                        <figure>
+                            <img src="images/icones/html-5.png" alt="HTML"/>
+                            <figcaption>HTML/CSS</figcaption>
+                        </figure>
+                        <div class="overlay">
+                            <div class="text"><i class="fas fa-plus-circle"></i>INFORMAÇÃO</div>
+                        </div>
+                    </aside>
+                    <div id="md-html" class="modal md-small md-laranja">
+                        <div class="modal-content">
+                            <span class="close" onclick="modal.closeModal(this)">
+                                <i class="fas fa-times"></i>
+                            </span>
+                            <h3 class="modal-header"><img src="images/icones/html-5.png" alt="HTML modal"/>HTML/CSS</h3>
+                            <div class="row">
+                                <div class="cl-12">
+                                    <p>Com o Html/Css consigo desenvolver páginas para o Front-End, fazendo uso adequado das tags, respeitando as regras semânticas definidas pela W3C e aplicando o Css adequadamente para criar o layout esperado, tanto para desktop como para mobile.</p>
+                                    <span class="span">Outros:</span>
+                                    <button class="btn btn-info btn-block" onclick="modal.openModal(this)" data-modal="md-formacao-front-end">
+                                        Formação Front-End
+                                    </button>
+                                    <span class="span">Tags:</span>
+                                    <ul class="list list-projetos">
+                                        <li>HTML Tags</li>
+                                        <li>HTML Forms</li>
+                                        <li>HTML Media</li>
+                                        <li>HTML Semantic</li>
+                                        <li>CSS Selectors</li>
+                                        <li>CSS Responsive</li>
+                                        <li>CSS Grid</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>            
+                    <aside class="item" onclick="modal.openModal(this)" data-modal="md-javascript">
+                        <figure>
+                            <img src="images/icones/javascript.png" alt="JavaScript"/>
+                            <figcaption>JavaScript</figcaption>
+                        </figure>
+                        <div class="overlay">
+                            <div class="text"><i class="fas fa-plus-circle"></i>INFORMAÇÃO</div>
+                        </div>
+                    </aside>
+                    <div id="md-javascript" class="modal md-small md-amarelo">
+                        <div class="modal-content">
+                            <span class="close" onclick="modal.closeModal(this)">
+                                <i class="fas fa-times"></i>
+                            </span>
+                            <h3 class="modal-header">
+                                <img src="images/icones/javascript.png" alt="JavaScript modal"/> JavaScript        </h3>
+                            <div class="row">
+                                <div class="cl-12">
+                                    <p>Tenho um bom conhecimento da linguagem JavaScript puro (ou melhor Vanilla JS), consigo manipular os elementos do DOM e também realizar integração com o back-end através de solicitações Ajax.</p>
+                                    <span class="span">Outros:</span>
+                                    <button class="btn btn-info btn-block" onclick="modal.openModal(this)" data-modal="md-formacao-front-end">
+                                        Formação Front-End
+                                    </button>
+                                    <span class="span">Tags:</span>
+                                    <ul class="list list-projetos">
+                                        <li>JavaScript</li>
+                                        <li>JS Objectos</li>
+                                        <li>JS Functions</li>
+                                        <li>JS Forms</li>
+                                        <li>JS DOM HTML</li>
+                                        <li>JS Ajax</li>
+                                        <li>JS Json</li>
+                                        <li>JQuery</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>            
+                    <aside class="item" onclick="modal.openModal(this)" data-modal="md-dot-net">
+                        <figure>
+                            <img src="images/icones/hashtag.png" alt=".Net"/>
+                            <figcaption>.Net</figcaption>
+                        </figure>
+                        <div class="overlay">
+                            <div class="text"><i class="fas fa-plus-circle"></i>INFORMAÇÃO</div>
+                        </div>
+                    </aside>
+                    <div id="md-dot-net" class="modal md-small md-azul">
+                        <div class="modal-content">
+                            <span class="close" onclick="modal.closeModal(this)">
+                                <i class="fas fa-times"></i>
+                            </span>
+                            <h3 class="modal-header"><img src="images/icones/hashtag.png" alt=".Net"/> .Net</h3>
+                            <div class="row">
+                                <div class="cl-12">
+                                    <p>Dentro da plataforma .NET, consigo desenvolver aplicações web usando a linguagem C#, criando aplicações <b>MVC</b> e <b>APIS</b>, aplicando as boas práticas de programação com a linguagem C#.</p>
+                                    <span class="span">Experiência Profissional:</span>
+                                    <button class="btn btn-success btn-block" onclick="modal.openModal(this)" data-modal="md-experiencia-atento">
+                                        Atento Brasil S/A - 1 anos, 4 meses e 26 dias
+                                    </button>
+                                    <span class="span">Outros:</span>
+                                    <button class="btn btn-info btn-block" onclick="modal.openModal(this)" data-modal="md-formacao-dotnet-alura">
+                                        Formação .NET - Alura                </button>
+                                    <span class="span">Tags:</span>
+                                    <ul class="list list-projetos">
+                                        <li>C#</li>
+                                        <li>.NET API</li>
+                                        <li>.NET Core</li>
+                                        <li>.NET Framework</li>
+                                        <li>POO</li>
+                                        <li>DLLs</li>
+                                        <li>NuGet</li>
+                                        <li>.NET para web</li>
+                                        <li>Persistência com .NET</li>
+                                        <li>TDD C#</li>
+                                        <li>ASP.NET: Razor</li>
+                                        <li>ASP.NET Identity</li>
+                                        <li>NHivernate</li>
+                                        <li>Entity</li>
+                                        <li>Linq</li>
+                                        <li>Visual Studio</li>
+                                        <li>Visual Studio Code</li>
+                                        <li>xUnit</li>
+                                        <li>Moq</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>            
+                    <aside class="item" onclick="modal.openModal(this)" data-modal="md-php">
+                        <figure>
+                            <img src="images/icones/elephant.png" alt="PHP"/>
+                            <figcaption>PHP</figcaption>
+                        </figure>
+                        <div class="overlay">
+                            <div class="text"><i class="fas fa-plus-circle"></i>INFORMAÇÃO</div>
+                        </div>
+                    </aside>
+                    <div id="md-php" class="modal md-small md-roxo">
+                        <div class="modal-content">
+                            <span class="close" onclick="modal.closeModal(this)">
+                                <i class="fas fa-times"></i>
+                            </span>
+                            <h3 class="modal-header">
+                                <img src="images/icones/elephant.png" alt="PHP modal"/> PHP        </h3>
+                            <div class="row">
+                            <div class="cl-12">
+                                    <p>Com o PHP consigo desenvolver aplicações web e apis, aplicando as boas práticas de programação com a linguagem PHP.</p>
+                                    <span class="span">Experiência Profissional:</span>
+                                    <button class="btn btn-success btn-block" onclick="modal.openModal(this)" data-modal="md-experiencia-plyn">
+                                        Plyn Midia Interativa LTDA-ME - 7 meses, 24 dias
+                                    </button>
+                                    <span class="span">Tags:</span>
+                                    <ul class="list list-projetos">
+                                        <li>PHP</li>
+                                        <li>POO</li>
+                                        <li>Laravel</li>
+                                        <li>Persistência em PHP</li>
+                                        <li>PHP e MySQL</li>
+                                        <li>WordPress</li>
+                                        <li>CodeIgniter</li>
+                                        <li>Composer</li>
+                                        <li>API PHP</li>
+                                        <li>PhpStorm</li>
+                                        <li>Visual Studio Code</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>            
+                    <aside class="item" onclick="modal.openModal(this)" data-modal="md-java">
+                        <figure>
+                            <img src="images/icones/java.png" alt="JAVA"/>
+                            <figcaption>JAVA</figcaption>
+                        </figure>
+                        <div class="overlay">
+                            <div class="text"><i class="fas fa-plus-circle"></i>INFORMAÇÃO</div>
+                        </div>
+                    </aside>
+                    <div id="md-java" class="modal md-small md-vermelho">
+                        <div class="modal-content">
+                            <span class="close" onclick="modal.closeModal(this)">
+                                <i class="fas fa-times"></i>
+                            </span>
+                            <h3 class="modal-header">
+                                <img src="images/icones/java.png" class="ver-bottom" alt="JAVA modal"/> JAVA        </h3>
+                            <div class="row">
+                                <div class="cl-12">
+                                    <p>Tenho um <b>baixo conhecimento com a plataforma Java</b>, os conhecimentos que adquiri foram obtidos através de cursos realizados na plataforma Alura e pelo fato de ser a linguagem padrão da <b>Universidade</b>.</p>
+                                    <span class="span">Outros:</span>
+                                    <button class="btn btn-info btn-block" onclick="modal.openModal(this)" data-modal="md-formacao-java">
+                                        Formação Java (cursando)                </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>            
+                    <!--<aside class="item" onclick="modal.openModal(this)" data-modal="md-css">
+                        <figure>
+                            <img src="images/icones/css.png" alt="CSS"/>
+                            <figcaption>CSS</figcaption>
+                        </figure>
+                        <div class="overlay">
+                            <div class="text"><i class="fas fa-plus-circle"></i>INFORMAÇÃO</div>
+                        </div>
+                    </aside>-->
+                    <aside class="item" onclick="modal.openModal(this)" data-modal="md-sql">
+                        <figure>
+                            <img src="images/icones/sql.png" alt="SQL"/>
+                            <figcaption>SQL</figcaption>
+                        </figure>
+                        <div class="overlay">
+                            <div class="text"><i class="fas fa-plus-circle"></i>INFORMAÇÃO</div>
+                        </div>
+                    </aside>
+                    <div id="md-sql" class="modal md-small md-azul">
+                        <div class="modal-content">
+                            <span class="close" onclick="modal.closeModal(this)">
+                                <i class="fas fa-times"></i>
+                            </span>
+                            <h3 class="modal-header">
+                                <img src="images/icones/sql.png" alt="SQL modal"/> SQL        </h3>
+                            <div class="row">
+                                <div class="cl-12">
+                                    <p>Tenho um bom conhecimento da linguagem SQL, principalmente para armazenar, manipular e recuperar dados usando uma linguagem de programação como C#, Java ou PHP. Também consigo elaborar scripts para criação de um banco de dados e suas tabelas.</p>
+                                    <span class="span">Outros:</span>
+                                    <button class="btn btn-info btn-block" onclick="modal.openModal(this)" data-modal="md-formacao-microsoft-sql-server-alura">
+                                        Formação Sql com Microsoft SQL Server 2017 - Alura
+                                    </button>
+                                    <span class="span">Tags:</span>
+                                    <ul class="list list-projetos">
+                                        <li>SQL</li>
+                                        <li>Mysql</li>
+                                        <li>Sql Server</li>
+                                        <li>Stored Procedures</li>
+                                        <li>Views</li>
+                                        <li>Functions</li>
+                                        <li>Trigger</li>
+                                        <li>Create</li>
+                                        <li>Select</li>
+                                        <li>Insert</li>
+                                        <li>Update</li>
+                                        <li>Try-Catch</li>
+                                        <li>While</li>
+                                        <li>If</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </section>        
+        <section id="formacao-academica" class="box box-formacao">
+            <div class="grid">
+                <h4 class="box-title box-green">Formação</h4>
+                <div class="row">
+                    <div class="cl-12 cl-g-6">
+                        <article class="formacao-item margin-right">
+                            <header>
+                                <figure>
+                                    <img src="images/icones/reward-cinza.png" alt="Tecnólogo em Informática para Negócios"/>
+                                </figure>
+                                <div>
+                                    <h2>Tecnólogo em Informática para Negócios</h2>
+                                </div>
+                            </header>
+                            <div class="row">
+                                <div class="cl-12 cl-s-8">
+                                    <ul>
+                                        <li>
+                                            <span>Instituição:</span>
+                                            <p>Fatec São Bernardo do Campo</p>
+                                        </li>
+                                        <li>
+                                            <span>Início:</span>
+                                            <p>2º Semestre de 2018</p>
+                                        </li>
+                                        <li>
+                                            <span>Fim:</span>
+                                            <p>1º Semestre de 2021</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="cl-12 cl-s-4">
+                                    <ul>
+                                        <li>
+                                            <span>Nível:</span>
+                                            <p>Graduação</p>
+                                        </li>
+                                        <li>
+                                            <span>Duração:</span>
+                                            <p>3 anos</p>
+                                        </li>
+                                        <li>
+                                            <span>Status:</span>
+                                            <p><b>Cursando</b></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cl-12">
+                                    <span>Progresso:</span>
+                                    <div class="bar-progresso">
+                                        <div style="width: 66%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br/>
+                            <div class="text-center">
+                                <button class="btn btn-secondary" onclick="modal.openModal(this)" data-modal="md-formacao-fatec">
+                                    <i class="fas fa-plus"></i> INFORMAÇÃO
+                                </button>
+                            </div>
+                            <div id="md-formacao-fatec" class="modal md-verde">
+                                    <div class="modal-content">
+                                        <span class="close" onclick="modal.closeModal(this)">
+                                            <i class="fas fa-times" aria-hidden="true"></i>
+                                        </span>
+                                        <h3 class="modal-header"> <img src="images/icones/reward-cinza.png" alt="Tecnólogo em Informática para Negócios"> Tecnólogo em Informática para Negócios</h3>
+                                        <div class="row">
+                                            <div class="cl-g-9 padding-right-30">
+                                                <span>Matriz Curricular:</span>
+                                                <div class="box-accordion">
+                                                    <button class="accordion" onclick="accordion.changePanel(this)">1º Semestre</button>
+                                                    <div class="panel">
+                                                        <table>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th rowspan="2"></th>
+                                                                    <th rowspan="2">Componentes Curriculares</th>
+                                                                    <th class="text-center" colspan="3">Carga Horária (Horas-aula)</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="text-center">Teoria</th>
+                                                                    <th class="text-center">Prática</th>
+                                                                    <th class="text-center">Total</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Informática e Negócios</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">60</td>
+                                                                        <td class="text-center">80</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Administração Geral</td>
+                                                                        <td class="text-center">60</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">80</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Comunicação e Expressão</td>
+                                                                        <td class="text-center">40</td>
+                                                                        <td class="text-center">40</td>
+                                                                        <td class="text-center">80</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Matemática Discreta</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">60</td>
+                                                                        <td class="text-center">80</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Empreendedorismo</td>
+                                                                        <td class="text-center">30</td>
+                                                                        <td class="text-center">10</td>
+                                                                        <td class="text-center">40</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Sociedade, Tecnologia e Inovação</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">40</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Espanhol I</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">40</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Inglês I</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">40</td>
+                                                                    </tr>
+                                                                                            </tbody>
+                                                            <tfoot>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <th>Total</th>
+                                                                    <td class="text-center">230</td>
+                                                                    <td class="text-center">250</td>
+                                                                    <td class="text-center">480</td>
+                                                                </tr>
+                                                            </tfoot>
+                                                        </table>
+                                                    </div>
+                                                    <button class="accordion" onclick="accordion.changePanel(this)">2º Semestre</button>
+                                                    <div class="panel">
+                                                        <table>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th rowspan="2"></th>
+                                                                    <th rowspan="2">Componentes Curriculares</th>
+                                                                    <th class="text-center" colspan="3">Carga Horária (Horas-aula)</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="text-center">Teoria</th>
+                                                                    <th class="text-center">Prática</th>
+                                                                    <th class="text-center">Total</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Sistemas de Informação</td>
+                                                                        <td class="text-center">40</td>
+                                                                        <td class="text-center">40</td>
+                                                                        <td class="text-center">80</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Redes de Computadores</td>
+                                                                        <td class="text-center">40</td>
+                                                                        <td class="text-center">40</td>
+                                                                        <td class="text-center">80</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Algoritmos e Programação de Computadores</td>
+                                                                        <td class="text-center">40</td>
+                                                                        <td class="text-center">40</td>
+                                                                        <td class="text-center">80</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Economia</td>
+                                                                        <td class="text-center">40</td>
+                                                                        <td class="text-center">40</td>
+                                                                        <td class="text-center">80</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Contabilidade</td>
+                                                                        <td class="text-center">30</td>
+                                                                        <td class="text-center">10</td>
+                                                                        <td class="text-center">40</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Fundamentos de Cálculo</td>
+                                                                        <td class="text-center">30</td>
+                                                                        <td class="text-center">10</td>
+                                                                        <td class="text-center">40</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Espanhol II</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">40</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Inglês II</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">40</td>
+                                                                    </tr>
+                                                                                            </tbody>
+                                                            <tfoot>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <th>Total</th>
+                                                                    <td class="text-center">260</td>
+                                                                    <td class="text-center">220</td>
+                                                                    <td class="text-center">480</td>
+                                                                </tr>
+                                                            </tfoot>
+                                                        </table>
+                                                    </div>
+                                                    <button class="accordion" onclick="accordion.changePanel(this)">3º Semestre</button>
+                                                    <div class="panel">
+                                                        <table>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th rowspan="2"></th>
+                                                                    <th rowspan="2">Componentes Curriculares</th>
+                                                                    <th class="text-center" colspan="3">Carga Horária (Horas-aula)</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="text-center">Teoria</th>
+                                                                    <th class="text-center">Prática</th>
+                                                                    <th class="text-center">Total</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Banco de Dados</td>
+                                                                        <td class="text-center">40</td>
+                                                                        <td class="text-center">40</td>
+                                                                        <td class="text-center">80</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Estruturas de Dados</td>
+                                                                        <td class="text-center">60</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">80</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Linguagens de Programação I</td>
+                                                                        <td class="text-center">40</td>
+                                                                        <td class="text-center">40</td>
+                                                                        <td class="text-center">80</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Engenharia de Software</td>
+                                                                        <td class="text-center">40</td>
+                                                                        <td class="text-center">40</td>
+                                                                        <td class="text-center">80</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Gestão de Equipes</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">40</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Matemática Financeira</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">40</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Direito Empresarial Geral</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">40</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Inglês III</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">40</td>
+                                                                    </tr>
+                                                                                            </tbody>
+                                                            <tfoot>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <th>Total</th>
+                                                                    <td class="text-center">260</td>
+                                                                    <td class="text-center">220</td>
+                                                                    <td class="text-center">480</td>
+                                                                </tr>
+                                                            </tfoot>
+                                                        </table>
+                                                    </div>
+                                                    <button class="accordion" onclick="accordion.changePanel(this)">4º Semestre</button>
+                                                    <div class="panel">
+                                                        <table>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th rowspan="2"></th>
+                                                                    <th rowspan="2">Componentes Curriculares</th>
+                                                                    <th class="text-center" colspan="3">Carga Horária (Horas-aula)</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="text-center">Teoria</th>
+                                                                    <th class="text-center">Prática</th>
+                                                                    <th class="text-center">Total</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Sistemas Operacionais</td>
+                                                                        <td class="text-center">40</td>
+                                                                        <td class="text-center">40</td>
+                                                                        <td class="text-center">80</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Administração de Banco de Dados</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">60</td>
+                                                                        <td class="text-center">80</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Linguagens de Programação II</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">60</td>
+                                                                        <td class="text-center">80</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Interação Humano Computador</td>
+                                                                        <td class="text-center">30</td>
+                                                                        <td class="text-center">10</td>
+                                                                        <td class="text-center">40</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Metodologia da pesquisa científico-tecnológica</td>
+                                                                        <td class="text-center">30</td>
+                                                                        <td class="text-center">10</td>
+                                                                        <td class="text-center">40</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Estatística</td>
+                                                                        <td class="text-center">40</td>
+                                                                        <td class="text-center">40</td>
+                                                                        <td class="text-center">80</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Gestão da Qualidade e Ambiental</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">40</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Inglês IV</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">40</td>
+                                                                    </tr>
+                                                                                            </tbody>
+                                                            <tfoot>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <th>Total</th>
+                                                                    <td class="text-center">220</td>
+                                                                    <td class="text-center">260</td>
+                                                                    <td class="text-center">480</td>
+                                                                </tr>
+                                                            </tfoot>
+                                                        </table>
+                                                    </div>
+                                                    <button class="accordion active" onclick="accordion.changePanel(this)">5º Semestre</button>
+                                                    <div class="panel" style="display: block;">
+                                                        <table>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th rowspan="2"></th>
+                                                                    <th rowspan="2">Componentes Curriculares</th>
+                                                                    <th class="text-center" colspan="3">Carga Horária (Horas-aula)</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="text-center">Teoria</th>
+                                                                    <th class="text-center">Prática</th>
+                                                                    <th class="text-center">Total</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-hourglass-half" aria-hidden="true"></i></td>
+                                                                        <td>Segurança Sistemas de Informação</td>
+                                                                        <td class="text-center">40</td>
+                                                                        <td class="text-center">40</td>
+                                                                        <td class="text-center">80</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-hourglass-half" aria-hidden="true"></i></td>
+                                                                        <td>Gestão da Qualidade de Software</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">40</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-hourglass-half" aria-hidden="true"></i></td>
+                                                                        <td>Linguagens de Programação III</td>
+                                                                        <td class="text-center">40</td>
+                                                                        <td class="text-center">40</td>
+                                                                        <td class="text-center">80</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-hourglass-half" aria-hidden="true"></i></td>
+                                                                        <td>Gestão Financeira</td>
+                                                                        <td class="text-center">40</td>
+                                                                        <td class="text-center">40</td>
+                                                                        <td class="text-center">80</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-hourglass-half" aria-hidden="true"></i></td>
+                                                                        <td>Marketing</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">40</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-hourglass-half" aria-hidden="true"></i></td>
+                                                                        <td>Pesquisa Operacional</td>
+                                                                        <td class="text-center">40</td>
+                                                                        <td class="text-center">40</td>
+                                                                        <td class="text-center">80</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-hourglass-half" aria-hidden="true"></i></td>
+                                                                        <td>Fundamentos de Gestão de Projetos</td>
+                                                                        <td class="text-center">10</td>
+                                                                        <td class="text-center">30</td>
+                                                                        <td class="text-center">40</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-hourglass-half" aria-hidden="true"></i></td>
+                                                                        <td>Inglês V</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">40</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-hourglass-half" aria-hidden="true"></i></td>
+                                                                        <td>Trabalho de Graduação I</td>
+                                                                        <td class="text-center">40</td>
+                                                                        <td class="text-center">40</td>
+                                                                        <td class="text-center">80</td>
+                                                                    </tr>
+                                                                                            </tbody>
+                                                            <tfoot>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <th>Total</th>
+                                                                    <td class="text-center">270</td>
+                                                                    <td class="text-center">290</td>
+                                                                    <td class="text-center">560</td>
+                                                                </tr>
+                                                            </tfoot>
+                                                        </table>
+                                                    </div>
+                                                    <button class="accordion" onclick="accordion.changePanel(this)">6º Semestre</button>
+                                                    <div class="panel">
+                                                        <table>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th rowspan="2"></th>
+                                                                    <th rowspan="2">Componentes Curriculares</th>
+                                                                    <th class="text-center" colspan="3">Carga Horária (Horas-aula)</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="text-center">Teoria</th>
+                                                                    <th class="text-center">Prática</th>
+                                                                    <th class="text-center">Total</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-minus" aria-hidden="true"></i></td>
+                                                                        <td>Fundamentos de Auditoria</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">40</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-minus" aria-hidden="true"></i></td>
+                                                                        <td>Governança de Tecnologia da Informação</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">40</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-minus" aria-hidden="true"></i></td>
+                                                                        <td>Gestão e Operação por Processos</td>
+                                                                        <td class="text-center">40</td>
+                                                                        <td class="text-center">40</td>
+                                                                        <td class="text-center">80</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-minus" aria-hidden="true"></i></td>
+                                                                        <td>Multimídia e Hipermídia</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">60</td>
+                                                                        <td class="text-center">80</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-minus" aria-hidden="true"></i></td>
+                                                                        <td>Gestão e Planejamento da Pequena Empresa</td>
+                                                                        <td class="text-center">40</td>
+                                                                        <td class="text-center">40</td>
+                                                                        <td class="text-center">80</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-minus" aria-hidden="true"></i></td>
+                                                                        <td>Sistemas de Gestão de Produção e Logística</td>
+                                                                        <td class="text-center">60</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">80</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-minus" aria-hidden="true"></i></td>
+                                                                        <td>Projeto de Trabalho de Graduação</td>
+                                                                        <td class="text-center">10</td>
+                                                                        <td class="text-center">30</td>
+                                                                        <td class="text-center">40</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-minus" aria-hidden="true"></i></td>
+                                                                        <td>Inglês VI</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">20</td>
+                                                                        <td class="text-center">40</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-minus" aria-hidden="true"></i></td>
+                                                                        <td>Trabalho de Graduação II</td>
+                                                                        <td class="text-center">40</td>
+                                                                        <td class="text-center">40</td>
+                                                                        <td class="text-center">80</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-minus" aria-hidden="true"></i></td>
+                                                                        <td>Estágio Supervisionado</td>
+                                                                        <td class="text-center">120</td>
+                                                                        <td class="text-center">120</td>
+                                                                        <td class="text-center">240</td>
+                                                                    </tr>
+                                                                                            </tbody>
+                                                            <tfoot>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <th>Total</th>
+                                                                    <td class="text-center">390</td>
+                                                                    <td class="text-center">410</td>
+                                                                    <td class="text-center">800</td>
+                                                                </tr>
+                                                            </tfoot>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cl-g-3">
+                                                <ul>
+                                                    <li>
+                                                        <img src="images/fatec-sao-bernardo-campo.jpg" class="logo" alt="Logo Fatec São Bernardo do Campo">
+                                                    </li>
+                                                    <li>
+                                                        <span>Instituição:</span>
+                                                        <p>Fatec São Bernardo do Campo</p>
+                                                    </li>
+                                                    <li>
+                                                        <span>Início:</span>
+                                                        <p>2º Semestre de 2018</p>
+                                                    </li>
+                                                    <li>
+                                                        <span>Fim:</span>
+                                                        <p>1º Semestre de 2021</p>
+                                                    </li>
+                                                    <li>
+                                                        <span>Nível:</span>
+                                                        <p>Graduação</p>
+                                                    </li>
+                                                    <li>
+                                                        <span>Duração:</span>
+                                                        <p>3 anos</p>
+                                                    </li>
+                                                    <li>
+                                                        <span>Progresso:</span>
+                                                        <div class="bar-progresso">
+                                                            <div style="width: 66%;"></div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <span>Status:</span>
+                                                        <p><b>Cursando</b></p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </article>
+                    </div>
+                    <div class="cl-12 cl-g-6">
+                        <article class="formacao-item margin-left">
+                            <header>
+                                <figure>
+                                    <img src="images/icones/reward-verde.png" alt="Técnico em Informática para Internet"/>
+                                </figure>
+                                <div>
+                                    <h2>Técnico em Informática para Internet</h2>
+                                </div>
+                            </header>
+                            <div class="row">
+                                <div class="cl-12 cl-s-7">
+                                    <ul>
+                                        <li>
+                                            <span>Instituição:</span>
+                                            <p>Etec Lauro Gomes</p>
+                                        </li>
+                                        <li>
+                                            <span>Início:</span>
+                                            <p>2º Semestre de 2016</p>
+                                        </li>
+                                        <li>
+                                            <span>Fim:</span>
+                                            <p>2º Semestre de 2017</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="cl-12 cl-s-5">
+                                    <ul>
+                                        <li>
+                                            <span>Nível:</span>
+                                            <p>Técnico</p>
+                                        </li>
+                                        <li>
+                                            <span>Duração:</span>
+                                            <p>1 ano e 6 meses</p>
+                                        </li>
+                                        <li>
+                                            <span>Status:</span>
+                                            <p><b>Concluído</b></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cl-12">
+                                    <span>Progresso:</span>
+                                    <div class="bar-progresso">
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br/>
+                            <div class="text-center">
+                                <button class="btn btn-secondary" onclick="modal.openModal(this)" data-modal="md-formacao-etec-info-int">
+                                    <i class="fas fa-plus"></i> INFORMAÇÃO
+                                </button>
+                            </div>
+                            <div id="md-formacao-etec-info-int" class="modal md-verde">
+                                    <div class="modal-content">
+                                        <span class="close" onclick="modal.closeModal(this)">
+                                            <i class="fas fa-times" aria-hidden="true"></i>
+                                        </span>
+                                        <h3 class="modal-header"> <img src="images/icones/reward-cinza.png" alt="Técnico em Informática para Internet"> Técnico em Informática para Internet</h3>
+                                        <div class="row">
+                                            <div class="cl-g-9 padding-right-30">
+                                                <span>Matriz Curricular:</span>
+                                                <div class="box-accordion">
+                                                    <button class="accordion" onclick="accordion.changePanel(this)">1º Semestre</button>
+                                                    <div class="panel">
+                                                        <table>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th rowspan="2"></th>
+                                                                    <th rowspan="2">Componentes Curriculares</th>
+                                                                    <th class="text-center" colspan="3">Carga Horária (Horas-aula)</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="text-center">Teoria</th>
+                                                                    <th class="text-center">Prática</th>
+                                                                    <th class="text-center">Total</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Gestão de Sistemas Operacionais</td>
+                                                                        <td class="text-center">00</td>
+                                                                        <td class="text-center">50</td>
+                                                                        <td class="text-center">50</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Operação de Software Aplicativos I</td>
+                                                                        <td class="text-center">00</td>
+                                                                        <td class="text-center">50</td>
+                                                                        <td class="text-center">50</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Instalação e Manutenção de Computadores</td>
+                                                                        <td class="text-center">00</td>
+                                                                        <td class="text-center">50</td>
+                                                                        <td class="text-center">50</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Desenvolvimento de Design de Websites I</td>
+                                                                        <td class="text-center">00</td>
+                                                                        <td class="text-center">50</td>
+                                                                        <td class="text-center">50</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Lógica de Programação</td>
+                                                                        <td class="text-center">00</td>
+                                                                        <td class="text-center">100</td>
+                                                                        <td class="text-center">100</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Arte Digital</td>
+                                                                        <td class="text-center">00</td>
+                                                                        <td class="text-center">50</td>
+                                                                        <td class="text-center">50</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Empreendedorismo</td>
+                                                                        <td class="text-center">50</td>
+                                                                        <td class="text-center">00</td>
+                                                                        <td class="text-center">50</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Inglês Instrumental</td>
+                                                                        <td class="text-center">50</td>
+                                                                        <td class="text-center">00</td>
+                                                                        <td class="text-center">50</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Linguagem, Trabalho e Tecnologia</td>
+                                                                        <td class="text-center">50</td>
+                                                                        <td class="text-center">00</td>
+                                                                        <td class="text-center">50</td>
+                                                                    </tr>
+                                                                                            </tbody>
+                                                            <tfoot>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <th>Total</th>
+                                                                    <td class="text-center">150</td>
+                                                                    <td class="text-center">350</td>
+                                                                    <td class="text-center">500</td>
+                                                                </tr>
+                                                            </tfoot>
+                                                        </table>
+                                                    </div>
+                                                    <button class="accordion" onclick="accordion.changePanel(this)">2º Semestre</button>
+                                                    <div class="panel">
+                                                        <table>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th rowspan="2"></th>
+                                                                    <th rowspan="2">Componentes Curriculares</th>
+                                                                    <th class="text-center" colspan="3">Carga Horária (Horas-aula)</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="text-center">Teoria</th>
+                                                                    <th class="text-center">Prática</th>
+                                                                    <th class="text-center">Total</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Redes de Comunicação de Dados I</td>
+                                                                        <td class="text-center">00</td>
+                                                                        <td class="text-center">50</td>
+                                                                        <td class="text-center">50</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Operação de Softwares Aplicativos II</td>
+                                                                        <td class="text-center">00</td>
+                                                                        <td class="text-center">50</td>
+                                                                        <td class="text-center">50</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Desenvolvimento de Software I</td>
+                                                                        <td class="text-center">00</td>
+                                                                        <td class="text-center">100</td>
+                                                                        <td class="text-center">100</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Desenvolvimento e Design de Websites II</td>
+                                                                        <td class="text-center">00</td>
+                                                                        <td class="text-center">50</td>
+                                                                        <td class="text-center">50</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Projeto de Aplicações Web I</td>
+                                                                        <td class="text-center">00</td>
+                                                                        <td class="text-center">50</td>
+                                                                        <td class="text-center">50</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Tecnologias e Linguagens para Banco de Dados I</td>
+                                                                        <td class="text-center">00</td>
+                                                                        <td class="text-center">50</td>
+                                                                        <td class="text-center">50</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Composição e Projeto</td>
+                                                                        <td class="text-center">00</td>
+                                                                        <td class="text-center">50</td>
+                                                                        <td class="text-center">50</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Criação e Editoração de Imagens</td>
+                                                                        <td class="text-center">00</td>
+                                                                        <td class="text-center">50</td>
+                                                                        <td class="text-center">50</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Planejamento do TCC</td>
+                                                                        <td class="text-center">50</td>
+                                                                        <td class="text-center">00</td>
+                                                                        <td class="text-center">50</td>
+                                                                    </tr>
+                                                                                            </tbody>
+                                                            <tfoot>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <th>Total</th>
+                                                                    <td class="text-center">50</td>
+                                                                    <td class="text-center">450</td>
+                                                                    <td class="text-center">500</td>
+                                                                </tr>
+                                                            </tfoot>
+                                                        </table>
+                                                    </div>
+                                                    <button class="accordion active" onclick="accordion.changePanel(this)">3º Semestre</button>
+                                                    <div class="panel" style="display:block">
+                                                        <table>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th rowspan="2"></th>
+                                                                    <th rowspan="2">Componentes Curriculares</th>
+                                                                    <th class="text-center" colspan="3">Carga Horária (Horas-aula)</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th class="text-center">Teoria</th>
+                                                                    <th class="text-center">Prática</th>
+                                                                    <th class="text-center">Total</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Redes de Comunicação de Dados II</td>
+                                                                        <td class="text-center">00</td>
+                                                                        <td class="text-center">50</td>
+                                                                        <td class="text-center">50</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Programação para Internet</td>
+                                                                        <td class="text-center">00</td>
+                                                                        <td class="text-center">50</td>
+                                                                        <td class="text-center">50</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Desenvolvimento de Software II</td>
+                                                                        <td class="text-center">00</td>
+                                                                        <td class="text-center">100</td>
+                                                                        <td class="text-center">100</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Desenvolvimento e Design de Websites III</td>
+                                                                        <td class="text-center">00</td>
+                                                                        <td class="text-center">50</td>
+                                                                        <td class="text-center">50</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Projeto de Aplicações Web II</td>
+                                                                        <td class="text-center">00</td>
+                                                                        <td class="text-center">50</td>
+                                                                        <td class="text-center">50</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Tecnologias e Linguagens para Banco de Dados II</td>
+                                                                        <td class="text-center">00</td>
+                                                                        <td class="text-center">50</td>
+                                                                        <td class="text-center">50</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Marketing para Web</td>
+                                                                        <td class="text-center">00</td>
+                                                                        <td class="text-center">50</td>
+                                                                        <td class="text-center">50</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Ética e Cidadania Organizacional</td>
+                                                                        <td class="text-center">50</td>
+                                                                        <td class="text-center">00</td>
+                                                                        <td class="text-center">50</td>
+                                                                    </tr>
+                                                                                                    <tr>
+                                                                        <td class="text-center"><i class="fas fa-check" aria-hidden="true"></i></td>
+                                                                        <td>Desenvolvimento TCC</td>
+                                                                        <td class="text-center">00</td>
+                                                                        <td class="text-center">50</td>
+                                                                        <td class="text-center">50</td>
+                                                                    </tr>
+                                                                                            </tbody>
+                                                            <tfoot>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <th>Total</th>
+                                                                    <td class="text-center">50</td>
+                                                                    <td class="text-center">450</td>
+                                                                    <td class="text-center">500</td>
+                                                                </tr>
+                                                            </tfoot>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cl-g-3">
+                                                <ul>
+                                                    <li>
+                                                        <img src="images/etec-lauro-gomes.jpeg" class="logo" alt="Logo Etec Lauro Gomes">
+                                                    </li>
+                                                    <li>
+                                                        <span>Instituição:</span>
+                                                        <p>Etec Lauro Gomes</p>
+                                                    </li>
+                                                    <li>
+                                                        <span>Início:</span>
+                                                        <p>2º Semestre de 2016</p>
+                                                    </li>
+                                                    <li>
+                                                        <span>Fim:</span>
+                                                        <p>2º Semestre de 2017</p>
+                                                    </li>
+                                                    <li>
+                                                        <span>Nível:</span>
+                                                        <p>Técnico</p>
+                                                    </li>
+                                                    <li>
+                                                        <span>Duração:</span>
+                                                        <p>1 ano e 6 meses</p>
+                                                    </li>
+                                                    <li>
+                                                        <span>Progresso:</span>
+                                                        <div class="bar-progresso">
+                                                            <div></div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <span>Status:</span>
+                                                        <p><b>Concluído</b></p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>      
+        <section id="experiencia-profissional" class="box box-experiencia">
+            <div class="grid">
+                <h4 class="box-title box-brown">Experiência Profissional</h4>
+                <div class="row">
+                    <div class="cl-12 cl-g-6">
+                        <article class="experiencia-item margin-right">
+                            <header>
+                                <figure>
+                                    <img src="images/icones/suitcase-cinza.png" alt="Analista Programador Júnior"/>
+                                </figure>
+                                <div>
+                                    <h2>Analista Programador Júnior</h2>
+                                </div>
+                            </header>
+                            <div class="row">
+                                <div class="cl-12">
+                                    <ul>
+                                        <li>
+                                            <span>Empresa:</span>
+                                            <p>Atento Brasil S/A</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cl-12 cl-s-6">
+                                    <ul>
+                                        <li>
+                                            <span>Data admissão:</span>
+                                            <p>04 de Setembro de 2018</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="cl-12 cl-s-6">
+                                    <ul>
+                                        <li>
+                                            <span>Data saída:</span>
+                                            <p>01 de Fevereiro de 2020</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cl-12">
+                                    <span>Tecnologias usadas:</span>
+                                    <ul class="list list-tecnologias">
+                                        <li>.Net</li>
+                                        <li>C#</li>
+                                        <li>Asp.Net</li>
+                                        <li>JavaScript</li>
+                                        <li>Html e Css</li>
+                                        <li>Sql Server</li>
+                                        <li>SQL</li>
+                                        <li>SSIS</li>
+                                        <li>Visual Studio</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn btn-secondary" onclick="modal.openModal(this)" data-modal="md-experiencia-atento">
+                                    <i class="fas fa-plus"></i> INFORMAÇÃO
+                                </button>
+                            </div>
+                            <div id="md-experiencia-atento" class="modal md-azul">
+                                <div class="modal-content">
+                                    <span class="close" onclick="modal.closeModal(this)">
+                                        <i class="fas fa-times"></i>
+                                    </span>
+                                    <h3 class="modal-header"><img src="images/icones/suitcase-cinza.png" alt="Analista Programador Júnior"/> Analista Programador Júnior</h3>
+                                    <div class="row">
+                                        <div class="cl-g-8">
+                                            <p>Atuei como programador na empresa Atento por 1 ano e 5 meses, durante este período fiz parte da equipe de Sistemas Administrativo, trabalhando com diversos sistemas voltados para o RH, realizei atividades de correção de bugs, refatoração de código e implementação de novas funcionalidades.</p>
+                                            <span>Destaque:</span>
+                                            <p>Um dos Jobs que realizei foi a criação de diversos <b>dashboard</b> para o sistema de recrutamento de pessoas, usando bibliotecas <b>JavaScript</b> para criação dos gráficos e com <b>C#</b> e <b>SQL</b> para realizar a coleta e agrupamento das informações.</p>
+                                            <span>Tecnologias usadas:</span>
+                                            <ul class="list list-tecnologias">
+                                                <li>.Net</li>
+                                                <li>C#</li>
+                                                <li>Asp.Net</li>
+                                                <li>JavaScript</li>
+                                                <li>Html e Css</li>
+                                                <li>Sql Server</li>
+                                                <li>SQL</li>
+                                                <li>SSIS</li>
+                                                <li>Visual Studio</li>
+                                            </ul>
+                                        </div>
+                                        <div class="cl-g-4">
+                                            <ul>
+                                                <li>
+                                                    <span>Empresa:</span>
+                                                    <p>Atento Brasil S/A</p>
+                                                </li>
+                                                <li>
+                                                    <span>Data admissão:</span>
+                                                    <p>04 de Setembro de 2018</p>
+                                                </li>
+                                                <li>
+                                                    <span>Data saída:</span>
+                                                    <p>01 de Fevereiro de 2020</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="cl-12 cl-g-6">
+                        <article class="experiencia-item margin-left">
+                            <header>
+                                <figure>
+                                    <img src="images/icones/suitcase-cinza.png" alt="Programador Web"/>
+                                </figure>
+                                <div>
+                                    <h2>Programador Web</h2>
+                                </div>
+                            </header>
+                            <div class="row">
+                                <div class="cl-12">
+                                    <ul>
+                                        <li>
+                                            <span>Empresa:</span>
+                                            <p>Plyn Midia Interativa LTDA-ME</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cl-12 cl-s-6">
+                                    <ul>
+                                        <li>
+                                            <span>Data admissão:</span>
+                                            <p>03 de Janeiro de 2018</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="cl-12 cl-s-6">
+                                    <ul>
+                                        <li>
+                                            <span>Data saída:</span>
+                                            <p>27 de Agosto de 2018</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cl-12">
+                                    <span>Tecnologias usadas:</span>
+                                    <ul class="list list-tecnologias">
+                                        <li>PHP</li>
+                                        <li>Laravel</li>
+                                        <li>WordPress</li>
+                                        <li>JavaScript</li>
+                                        <li>Html e Css</li>
+                                        <li>MySql</li>
+                                        <li>SQL</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn btn-secondary" onclick="modal.openModal(this)" data-modal="md-experiencia-plyn">
+                                    <i class="fas fa-plus"></i> INFORMAÇÃO
+                                </button>
+                            </div>
+                            <div id="md-experiencia-plyn" class="modal md-azul">
+                                <div class="modal-content">
+                                    <span class="close" onclick="modal.closeModal(this)">
+                                        <i class="fas fa-times"></i>
+                                    </span>
+                                    <h3 class="modal-header"><img src="images/icones/suitcase-cinza.png" alt="Programador Web"/> Programador Web</h3>
+                                    <div class="row">
+                                        <div class="cl-g-8">
+                                            <p>Atuei como programador na agencia Plyn por 8 meses, durante este período realizei diversos projetos com a linguagem PHP e JavaScript, atuando na criação e manutenção de sites e aplicações web.</p>
+                                            <span>Destaque:</span>
+                                            <p>Um dos Jobs que realizei foi a criação de um site <b>WordPress</b> para apresentar os produtos de uma empresa de distribuição de alimentos. O principal desafio deste projeto, foi que todas as informações dos produtos estavam em diversos arquivos <b>Excel</b> e as imagens em diversas pastas.</p> 
+                                            <p>A solução apresenta foi criar um script para adequar as informações do Excel para o WordPress.</p>
+                                            <span>Tecnologias usadas:</span>
+                                            <ul class="list list-tecnologias">
+                                                <li>PHP</li>
+                                                <li>Laravel</li>
+                                                <li>WordPress</li>
+                                                <li>JavaScript</li>
+                                                <li>Html e Css</li>
+                                                <li>MySql</li>
+                                                <li>SQL</li>
+                                            </ul>
+                                        </div>
+                                        <div class="cl-g-4">
+                                            <ul>
+                                                <li>
+                                                    <span>Empresa:</span>
+                                                    <p>Plyn Midia Interativa LTDA-ME</p>
+                                                </li>
+                                                <li>
+                                                    <span>Data admissão:</span>
+                                                    <p>03 de Janeiro de 2018</p>
+                                                </li>
+                                                <li>
+                                                    <span>Data saída:</span>
+                                                    <p>27 de Agosto de 2018</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projetos" class="box box-projetos">
+            <div class="grid">
+                <h4 class="box-title box-yellow">Projetos</h4>
+                <div class="row">
+                    <div class="cl-12 cl-m-6 cl-g-6">
+                        <article class="projetos-item margin-right">
+                            <header>
+                                <figure>
+                                    <img src="images/projetos/logo-miniapps.png" alt=""/>
+                                </figure>
+                                <div>
+                                    <h2>Projetos</h2>
+                                </div>
+                            </header>
+                            <div class="row">
+                                <div class="cl-12">
+                                    <span>Descrição:</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                    <span>Plataforma:</span>
+                                    <ul class="list list-projetos">
+                                        <li>Mobile</li>
+                                        <li>Web</li>
+                                    </ul>
+                                    <span>Tecnologias usadas:</span>
+                                    <ul class="list list-projetos height">
+                                        <li>PHP</li>
+                                        <li>JavaScript</li>
+                                        <li>Html e Css</li>
+                                        <li>React Native</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cl-12">
+                                    <button class="btn btn-secondary"><i class="fas fa-plus"></i> INFORMAÇÃO</button>
+                                    <button class="btn btn-info"><i class="fas fa-external-link-alt"></i> Acessar</button>
+                                    <button class="btn btn-success"><i class="fab fa-github"></i> Código</button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="cl-12 cl-m-6 cl-g-6">
+                        <article class="projetos-item margin-left">
+                            <header>
+                                <figure>
+                                    <img src="images/projetos/logo-miniapps.png" alt=""/>
+                                </figure>
+                                <div>
+                                    <h2>Projetos</h2>
+                                </div>
+                            </header>
+                            <div class="row">
+                                <div class="cl-12">
+                                    <span>Descrição:</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                                    <span>Plataforma:</span>
+                                    <ul class="list list-projetos">
+                                        <li>Mobile</li>
+                                        <li>Web</li>
+                                    </ul>
+                                    <span>Tecnologias usadas:</span>
+                                    <ul class="list list-projetos height">
+                                        <li>PHP</li>
+                                        <li>JavaScript</li>
+                                        <li>Html e Css</li>
+                                        <li>React Native</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cl-12">
+                                    <button class="btn btn-secondary"><i class="fas fa-plus"></i> INFORMAÇÃO</button>
+                                    <button class="btn btn-success"><i class="fab fa-github"></i> Código</button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cursos-extras" class="box box-cursos">
+            <div class="grid">
+                <h4 class="box-title box-blue">Outros</h4>
+                <div class="row">
+                    <div class="cl-12 cl-m-6 cl-g-4">
+                        <article>
+                            <div class="cursos-item" onclick="modal.openModal(this)" data-modal="md-formacao-dotnet-alura">
+                                <span class="tab tab-curso">Curso</span>
+                                <header>
+                                    <h2>Formação .NET - Alura</h2>
+                                    <figure>
+                                        <img src="images/icones/083-video-conference.png" alt="Formação .NET - Alura"/>
+                                    </figure>
+                                    <div class="overlay">
+                                        <div class="text"><i class="fas fa-plus-circle"></i>INFORMAÇÃO</div>
+                                    </div>
+                                </header>
+                            </div>
+                            <div id="md-formacao-dotnet-alura" class="modal md-small md-azul-2">
+                                <div class="modal-content">
+                                    <span class="close" onclick="modal.closeModal(this)">
+                                        <i class="fas fa-times"></i>
+                                    </span>
+                                    <h3 class="modal-header"><img src="images/icones/083-video-conference.png"/> Formação .NET - Alura</h3>
+                                    <div class="row">
+                                        <div class="cl-12">
+                                            <p>Conclui a Formação .NET na plataforma Alura, realizei diversos cursos referentes a linguagem C# e também a plataforma .NET.</p>
+                                            <span class="span">Lista de cursos:</span>
+                                            <ul class="list list-projetos li-block">
+                                                <li>C# parte 1: Primeiros passos</li>
+                                                <li>C# parte 2: Introdução à Orientação a Objetos</li>
+                                                <li>C# parte 3: Entendendo herança e interface</li>
+                                                <li>C# parte 4: Entendendo exceções</li>
+                                                <li>C# parte 5: Bibliotecas DLLs, documentação e usando o NuGet</li>
+                                                <li>C# parte 6: Strings, expressões regulares e a classe Object</li>
+                                                <li>C# parte 7: Array e tipos genéricos</li>
+                                                <li>C# parte 8: List &lt;T&gt;, lambda, linq</li>
+                                                <li>C# Parte 9: Entrada e saída (I/O) com streams</li>
+                                                <li>Asp.NET Core: Uma webapp usando o padrão MVC</li>
+                                                <li>ASP.NET Core parte 1: Um e-Commerce com MVC e EF Core</li>
+                                                <li>ASP.NET Core parte 2: Um e-Commerce com MVC e EF Core</li>
+                                                <li>ASP.NET Core Parte 3: Identity</li>
+                                                <li>ASP.NET Core Parte 4: IdentityServer</li>
+                                                <li>NHibernate: Persistência de dados com C#</li>
+                                                <li>Entity Framework Core: Banco de dados de forma eficiente</li>
+                                                <li>C#: Testes de unidade e TDD com xUnit</li>
+                                                <li>Mocks em C#: Testes de Integração com xUnit e Moq</li>
+                                                <li>Design Patterns C# I: Boas práticas de programação</li>
+                                                <li>Design Patterns C# II: Boas práticas de programação</li>
+                                                <li>SOLID com C#: Orientação a Objetos com C#</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>           
+                    </div>
+                    <div class="cl-12 cl-m-6 cl-g-4">
+                        <article>
+                            <div class="cursos-item" onclick="modal.openModal(this)" data-modal="md-seguranca-em-aplicacoes-web">
+                                <span class="tab tab-livro">Livro</span>
+                                <header>
+                                    <h2>Segurança em Aplicações web</h2>
+                                    <figure>
+                                        <img src="images/icones/book.png" alt="Segurança em Aplicações web"/>
+                                    </figure>
+                                    <div class="overlay">
+                                        <div class="text"><i class="fas fa-plus-circle"></i>INFORMAÇÃO</div>
+                                    </div>
+                                </header>
+                            </div>
+                            <div id="md-seguranca-em-aplicacoes-web" class="modal md-small md-vermelho-2">
+                                <div class="modal-content">
+                                    <span class="close" onclick="modal.closeModal(this)">
+                                        <i class="fas fa-times"></i>
+                                    </span>
+                                    <h3 class="modal-header"><img src="images/icones/book.png"/> Segurança em Aplicações web</h3>
+                                    <div class="row">
+                                        <div class="cl-12">
+                                            <p>O livro <b>Segurança Em aplicações web</b> da editora <b>Casa do Código</b>, apresenta algumas das principais vulnerabilidade de aplicações web, explica como estas ameaças funcionam e como fazer para corrigir tais inseguranças.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>            
+                    </div>
+                    <div class="cl-12 cl-m-6 cl-g-4">
+                        <article>
+                            <div class="cursos-item" onclick="modal.openModal(this)" data-modal="md-formacao-microsoft-sql-server-alura">
+                                <span class="tab tab-curso">Curso</span>
+                                <header>
+                                    <h2>Formação Sql com Microsoft SQL Server 2017 - Alura</h2>
+                                    <figure>
+                                        <img src="images/icones/083-video-conference.png" alt="Formação Sql com Microsoft SQL Server 2017"/>
+                                    </figure>
+                                    <div class="overlay">
+                                        <div class="text"><i class="fas fa-plus-circle"></i>INFORMAÇÃO</div>
+                                    </div>
+                                </header>
+                            </div>
+                            <div id="md-formacao-microsoft-sql-server-alura" class="modal md-small md-azul-2">
+                                <div class="modal-content">
+                                    <span class="close" onclick="modal.closeModal(this)">
+                                        <i class="fas fa-times"></i>
+                                    </span>
+                                    <h3 class="modal-header"><img src="images/icones/083-video-conference.png"/> Formação Sql com Microsoft SQL Server 2017 - Alura</h3>
+                                    <div class="row">
+                                        <div class="cl-12">
+                                            <p>Conclui a Formação Microsoft SQL Server 2017 na plataforma Alura, realizei diversos cursos referentes a linguagem SQL dentro da plataforma Sql Server.</p>
+                                            <span class="span">Lista de cursos:</span>
+                                            <ul class="list list-projetos li-block">
+                                                <li>SQL Server: Introdução ao SQL com Microsoft SQL Server 2017</li>
+                                                <li>SQL Server: Consultas avançadas com Microsoft SQL Server 2017</li>
+                                                <li>SQL Server: Manipulação de dados com Microsoft SQL Server 2017</li>
+                                                <li>SQL Server: T-SQL com Microsoft SQL Server 2017</li>
+                                                <li>SQL Server: Administração do Microsoft SQL Server 2017</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>            
+                    </div>
+                    <div class="cl-12 cl-m-6 cl-g-4">
+                        <article>
+                            <div class="cursos-item" onclick="modal.openModal(this)" data-modal="md-livro-desconstruindo-a-web">
+                                <span class="tab tab-livro">Livro</span>
+                                <header>
+                                    <h2>Desconstruindo a Web</h2>
+                                    <figure>
+                                        <img src="images/icones/book.png" alt="Desconstruindo a Web"/>
+                                    </figure>
+                                    <div class="overlay">
+                                        <div class="text"><i class="fas fa-plus-circle"></i>INFORMAÇÃO</div>
+                                    </div>
+                                </header>
+                            </div>
+                            <div id="md-livro-desconstruindo-a-web" class="modal md-small md-vermelho-2">
+                                <div class="modal-content">
+                                    <span class="close" onclick="modal.closeModal(this)">
+                                        <i class="fas fa-times"></i>
+                                    </span>
+                                    <h3 class="modal-header"><img src="images/icones/book.png"/> Desconstruindo a Web</h3>
+                                    <div class="row">
+                                        <div class="cl-12">
+                                            <p>O livro <b>Desconstruindo a Web</b> (As tecnologias por trás de uma requisição) da editora <b>Casa do Código</b>, apresenta todos os eventos que ocorrem em uma requisição HTTP, iniciando no navegador, passando pelo sistema operacional, passando pela rede e sendo processada pelo servidor.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>            
+                    </div>
+                    <div class="cl-12 cl-m-6 cl-g-4">
+                        <article>
+                            <div class="cursos-item" onclick="modal.openModal(this)" data-modal="md-formacao-front-end">
+                                <span class="tab tab-curso">Curso</span>
+                                <header>
+                                    <h2>Formação Front-End - Alura</h2>
+                                    <figure>
+                                        <img src="images/icones/083-video-conference.png" alt="Formação Front End"/>
+                                    </figure>
+                                    <div class="overlay">
+                                        <div class="text"><i class="fas fa-plus-circle"></i>INFORMAÇÃO</div>
+                                    </div>
+                                </header>
+                            </div>
+                            <div id="md-formacao-front-end" class="modal md-small md-azul-2">
+                                <div class="modal-content">
+                                    <span class="close" onclick="modal.closeModal(this)">
+                                        <i class="fas fa-times"></i>
+                                    </span>
+                                    <h3 class="modal-header"><img src="images/icones/083-video-conference.png"/> Formação Front-End - Alura</h3>
+                                    <div class="row">
+                                        <div class="cl-12">
+                                            <p>Conclui a Formação Front-End na plataforma Alura, realizei diversos cursos referentes ao Html, Css e Javascript.</p>
+                                            <span class="span">Lista de cursos:</span>
+                                            <ul class="list list-projetos li-block">
+                                                <li>HTML5 e CSS3 parte 1: A primeira página da Web</li>
+                                                <li>HTML5 e CSS3 parte 2: Posicionamento, listas e navegação</li>
+                                                <li>HTML5 e CSS3 parte 3: Trabalhando com formulários e tabelas</li>
+                                                <li>HTML5 e CSS3 parte 4: Avançando no CSS</li>
+                                                <li>JavaScript: primeiros passos com a linguagem</li>
+                                                <li>JavaScript: introdução a Orientação a Objetos</li>
+                                                <li>JavaScript: Interfaces e Herança em Orientação a Objetos</li>
+                                                <li>Sass e Compass: Descomplicando o CSS</li>
+                                                <li>Flexbox: Posicione elementos na tela</li>
+                                                <li>CSS Grid: Simplificando layouts</li>
+                                                <li>Web Design Responsivo: Páginas que se adaptam do mobile ao desk</li>
+                                                <li>Arquitetura CSS: Descomplicando os problemas</li>
+                                                <li>JavaScript: Conhecendo o Browser e padrões de projeto</li>
+                                                <li>JavaScript: Aprofundando em MVC, padrão Proxy e Factory</li>
+                                                <li>JavaScript: Salvando dados localmente com IndexedDB</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>            
+                    </div>
+                    <div class="cl-12 cl-m-6 cl-g-4">
+                        <article>
+                            <div class="cursos-item" onclick="modal.openModal(this)" data-modal="md-livro-codigo-limpo">
+                                <span class="tab tab-livro">Livro</span>
+                                <header>
+                                    <h2>Clean Code</h2>
+                                    <figure>
+                                        <img src="images/icones/book.png" alt="Clean Code"/>
+                                    </figure>
+                                    <div class="overlay">
+                                        <div class="text"><i class="fas fa-plus-circle"></i>INFORMAÇÃO</div>
+                                    </div>
+                                </header>
+                            </div>
+                            <div id="md-livro-codigo-limpo" class="modal md-small md-vermelho-2">
+                                <div class="modal-content">
+                                    <span class="close" onclick="modal.closeModal(this)">
+                                        <i class="fas fa-times"></i>
+                                    </span>
+                                    <h3 class="modal-header"><img src="images/icones/book.png"/> Clean Code</h3>
+                                    <div class="row">
+                                        <div class="cl-12">
+                                            <p>O livro <b>Clean Code</b> do autor Robert C. Marlin, apresenta diversos princípios, padrões e práticas para criar um código limpo. Proporcionando uma base de conhecimento que descreve a forma como pensamos quando criamos, lemos e limpamos um código.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>            
+                    </div>
+                    <div class="cl-12 cl-m-6 cl-g-4">
+                        <article>
+                            <div class="cursos-item" onclick="modal.openModal(this)" data-modal="md-formacao-java">
+                                <span class="tab tab-curso">Curso</span>
+                                <header>
+                                    <h2>Formação Java - Alura (cursando)</h2>
+                                    <figure>
+                                        <img src="images/icones/083-video-conference.png" alt="Formação Java (cursando)"/>
+                                    </figure>
+                                    <div class="overlay">
+                                        <div class="text"><i class="fas fa-plus-circle"></i>INFORMAÇÃO</div>
+                                    </div>
+                                </header>
+                            </div>
+                            <div id="md-formacao-java" class="modal md-small md-azul-2">
+                                <div class="modal-content">
+                                    <span class="close" onclick="modal.closeModal(this)">
+                                        <i class="fas fa-times"></i>
+                                    </span>
+                                    <h3 class="modal-header"><img src="images/icones/083-video-conference.png"/> Formação Java (cursando)</h3>
+                                    <div class="row">
+                                        <div class="cl-12">
+                                            <p>Estou <b>cursando</b> a Formação Java na plataforma Alura.</p>
+                                            <span class="span">Lista de cursos:</span>
+                                            <ul class="list list-projetos li-block">
+                                                <li>Java parte 1: Primeiros passos</li>
+                                                <li>Java parte 2: Introdução à Orientação a Objetos</li>
+                                                <li>Java parte 3: Entendendo herança e interface</li>
+                                                <li>Java parte 4: Entendendo exceções</li>
+                                                <li>Java parte 5: Pacotes e java.lang</li>
+                                                <li>Java parte 6: Conhecendo o java.util</li>
+                                                <li>Java parte 7: Trabalhando com java.io</li>
+                                                <li>Java: Dominando as Collections</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>            
+                    </div>
+                    <!--<div class="cl-12 cl-m-6 cl-g-4">
+                        <article>
+                            <div class="cursos-item" onclick="modal.openModal(this)" data-modal="md-livro-introducao-arquitetura-design-software">
+                                <span class="tab tab-livro">Livro</span>
+                                <header>
+                                    <h2>Introdução à Arquitetura e Design de Software</h2>
+                                    <figure>
+                                        <img src="images/icones/book.png" alt="Introdução à Arquitetura e Design de Software"/>
+                                    </figure>
+                                    <div class="overlay">
+                                        <div class="text"><i class="fas fa-plus-circle"></i>INFORMAÇÃO</div>
+                                    </div>
+                                </header>
+                            </div>
+                            <div id="md-livro-introducao-arquitetura-design-software" class="modal md-small md-vermelho-2">
+                                <div class="modal-content">
+                                    <span class="close" onclick="modal.closeModal(this)">
+                                        <i class="fas fa-times"></i>
+                                    </span>
+                                    <h3 class="modal-header"><img src="images/icones/book.png"/> Introdução à Arquitetura e Design de Software</h3>
+                                    <div class="row">
+                                        <div class="cl-12">
+                                            <p></p>
+                                            <span class="span">Lista de cursos:</span>
+                                            <ul class="list list-projetos li-block">
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>            
+                    </div>-->
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="grid-fluid box-contatos text-center">
+            <div class="grid">
+                <div class="row">
+                    <div class="cl-12 cl-m-12">
+                        <ul>
+                            <li>
+                                <a href="mailto:charles_aclr@yahoo.com.br" title="charles_aclr@yahoo.com.br" target="_blank">
+                                    <i class="far fa-envelope"></i>
+                                    charles_aclr@yahoo.com.br                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/antony-charles" target="_blank">
+                                    <i class="fab fa-github" target="_blank" aria-hidden="true"></i>GitHub
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/antony-charles-dev" target="_blank">
+                                    <i class="fab fa-linkedin" aria-hidden="true"></i>Linkedin
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-fluid box-contatos-rodape">
+            <div class="grid">
+                <div class="row">
+                    <div class="cl-12">
+                        <h6>2019 - 2020</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+</html>
