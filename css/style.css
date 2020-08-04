@@ -172,6 +172,12 @@ ul li p{
 .text-center{
     text-align: center;
 }
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
 .btn{
     border:none;
     border-radius: 0px;
@@ -652,7 +658,7 @@ ul li p{
 }
 .projetos-item header figure{
     display:table-cell;
-    height: 100%;
+    height: 73px;
     margin:0px;
     padding:5px;
     padding-right: 15px;
@@ -781,23 +787,16 @@ ul li p{
     padding: 1em 0px;
 }
 
-.box-contatos ul li a{
-    border: 1px solid #FFF;
-    border-radius: 3px;
-    display: block;
+.box-contatos a{
     color: #FFF;
     font-size: 1em;
     margin: 10px;
-    padding: 1em;
 }
-.box-contatos ul li a i{
-    font-size: 3em;
-    display:block;
-    margin-bottom: 15px;
+.box-contatos a i{
+    padding-right: 5px;
 }
-.box-contatos ul li a:hover{
-    color:#343535;
-    border-color:#343535;
+.box-contatos a:hover{
+    opacity: 0.7;
 }
 .box-contatos-rodape{
     background-color: #343535;
