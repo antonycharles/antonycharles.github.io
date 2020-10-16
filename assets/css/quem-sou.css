@@ -1,0 +1,68 @@
+.box__quem__sou{
+    padding:40px 0px;
+}
+.quem__sou{
+    padding: 20px 0px;
+}
+.quem__sou h2{
+    color:#ecb200;
+    font-size: 1.7em;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.quem__sou h2 span{
+    color:#4f4d4d;
+    display: block;
+    font-size: 0.4em;
+}
+.quem__sou .contatos{
+    margin-top:25px;
+}
+.quem__sou .contatos p{
+    margin-bottom: 5px;
+}
+.quem__sou .contatos figure img{
+    box-shadow: 10px 10px #17a2b8, -12px -12px #dcb239, 22px -22px #7a86ae, -24px 24px #73956f;
+    margin-bottom: 37px;
+    width: 200px;
+    transition: 2s;
+}
+.quem__sou .contatos figure img:hover{
+    box-shadow:2px 2px #17a2b8, -2px -2px #dcb239, 2px -2px #7a86ae, -2px 2px #73956f;
+}
+
+.quem__sou .contatos p a{
+    color:#4f4d4d;
+    font-family: 'Audiowide', sans-serif;
+}
+.quem__sou .contatos ul li{
+    display:inline-block;
+}
+.quem__sou .contatos ul li a{
+    color:#4f4d4d;
+    font-family: 'Audiowide', sans-serif;
+    margin: 0px 10px;
+}
+.quem__sou .contatos ul li a:hover{
+    color:#3a3a3a;
+}
+.quem__sou .contatos .fa-envelope{
+    color:#62929E;
+}
+.quem__sou .contatos .fa-phone{
+    color:#cd5360;
+}
+.quem__sou .contatos .fa-linkedin{
+    color:#0073b0;
+}
+.quem__sou .contatos .fa-github{
+    color:#547e53;
+}
+
+
+@media (min-width: 500px) {
+    .quem__sou h2{
+        font-size: 2.2em;
+        margin-bottom: 25px;
+    }
+}

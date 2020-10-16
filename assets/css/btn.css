@@ -1,0 +1,44 @@
+.btn{
+    border:none;
+    border-radius: 0px;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Audiowide', sans-serif;
+    font-size: 0.7em;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin:5px 0px 1em 0px;
+    padding:10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.btn i{
+    font-size: 1.3em;
+    padding-right: 5px;
+}
+.btn.btn-danger{
+    background-color: #dc3545;
+}
+.btn.btn-primary{
+    background-color: #007bff;
+}
+.btn.btn__secondary{
+    background-color: #6c757d;
+}
+.btn.btn__success{
+    background-color: #28a745;
+}
+.btn.btn-warning{
+    background-color: #ffc107;
+    color:#212529;
+}
+.btn.btn-info{
+    background-color: #17a2b8;
+}
+.btn:hover{
+    opacity: 0.7;
+}
+.btn.btn-block{
+    display:block;
+    width: 100%;
+}

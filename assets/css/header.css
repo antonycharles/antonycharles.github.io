@@ -1,0 +1,119 @@
+.header__top{
+    background-color: #FFF;
+    box-shadow: 0px 2px 5px 1px #000000ad;
+    padding:8px 3px;
+    position: absolute;
+    top:0px;
+    width: 100%;
+    z-index: 99999;
+}
+
+.header__logo{
+    display:inline-block;
+    margin:auto;
+}
+
+.header__logo img{
+    width: 120px;
+    margin-bottom: -4px;
+}
+.header__nav ul{
+    list-style-type: none;
+    margin:17px 0px;
+    padding:0px;
+    text-align: right;
+}
+.header__nav ul li{
+    border: 1px solid #DEDEDE;
+    font-family: 'Audiowide', sans-serif;
+    font-weight: 700;
+    font-size: 0.9em;
+    margin:3px 0px;
+    padding:5px 11px;
+    text-align: center;
+}
+.header__nav ul li:hover{
+    opacity:0.6;
+}
+.header__nav ul li a{
+    color: #4a4a4a;
+    display:block;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.header__top.home .header__nav ul li a{
+    color: #FFF;
+}
+.header__button{
+    cursor: pointer;
+    float: right;
+}
+  
+.header__button .bar1,.header__button .bar2,.header__button .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #343535;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.header__button.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.header__button.change .bar2 {opacity: 0;}
+.header__button.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+.header-mobile-show{
+    display:none;
+}
+
+@media (min-width: 770px) {
+    .header__logo img{
+        width: 170px;
+    }
+    .header__nav ul li{
+        border:none;
+        display:inline-block;
+        margin:0;
+        padding:0px 11px;
+        text-align: center;
+    }
+    .header__button{
+        display:none;
+    }
+    .header-mobile-show{
+        display: block!important;
+    }
+}
+
+.header__top.fixed{
+    -webkit-animation: schollAnimeteHeaderTop 1s;
+    animation: schollAnimeteHeaderTop 1s; 
+    position: fixed;
+    z-index:99999;
+}
+.header__top.fixed .header__logo img{
+    width: 80px;
+}
+.header__top.fixed .header__nav ul{
+    margin:0px;
+    margin-top:3px;
+}
+.header__top.fixed .header__button .bar1,.header__top.fixed .header__button .bar2,.header__top.fixed .header__button .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #343535;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+.header__top.fixed .header__button.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-4px, 3px);
+    transform: rotate(-45deg) translate(-4px, 3px);
+}
+@keyframes schollAnimeteHeaderTop {
+    from {top:-300px;}
+    to {top: 0px;}
+}

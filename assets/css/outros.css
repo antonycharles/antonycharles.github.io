@@ -1,0 +1,72 @@
+.box__cursos .glider-prev,.box__cursos .glider-next{
+    color:#FFF;
+    top:100%;
+}
+.box__cursos .glider-prev{
+    left:23px;
+}
+.box__cursos .glider-next{
+    right:23px;
+}
+
+.cursos__item{
+    background-color: #FFF;
+    border:1px solid #212529;
+    box-shadow: 0px 2px 5px 1px #00000045;
+    cursor:pointer;
+    margin:10px;
+    height: 500px;
+    padding: 0px 10px 45px 10px;
+    position: relative;
+    text-align: center;
+}
+.cursos__item .tab{
+    background-color: #343535;
+    color:#FFF;
+    display: block;
+    padding: 5px;
+    width: 100%;
+}
+.cursos__item .tab.tab__curso{
+    background-color:#62929e;
+}
+.cursos__item .tab.tab__livro{
+    background-color:#cd5360;
+}
+.cursos__item h2{
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    width: 100%;
+}
+.cursos__item p{
+    display:block;
+    font-family: 'Arial', sans-serif;
+    font-size: 0.9em;
+    font-weight: 400;
+    margin:3px;
+}
+.cursos__item figure{
+    margin:0px;
+    padding:10px;
+}
+.cursos__item figure img{
+    width: 50px;
+    max-width: none;
+}
+
+.cursos__item .btn{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+@media (min-width: 500px) {
+    .cursos__item header h2{
+        font-size: 1.3em;
+        font-weight: 100;
+    }
+}
+
+@media (min-width: 770px) {
+}

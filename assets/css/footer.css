@@ -1,0 +1,45 @@
+.box__contatos{
+    background-color: #595959;
+    padding: 1em 0px;
+}
+
+.box__contatos a{
+    color: #FFF;
+    font-size: 1em;
+    margin: 10px;
+}
+.box__contatos a i{
+    padding-right: 5px;
+}
+.box__contatos a:hover{
+    opacity: 0.7;
+}
+.box__contatos__rodape{
+    background-color: #343535;
+}
+.box__contatos__rodape h6{
+    color: #FFF;
+    font-size: 0.7em;
+    margin: 9px;
+    text-align: center;
+}
+
+
+@media (min-width: 500px) {
+    .box__contatos .btn{
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width: 770px) {
+    .box__contatos ul li{
+        display: inline-block;
+        width: 48%;
+    }
+}
+
+@media(min-width:960px){
+    .box__contatos ul li{
+        width: 24%;
+    }
+}

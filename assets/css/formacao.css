@@ -1,0 +1,80 @@
+.box__formacao{
+    background-color: #FFF;
+    border-top-color: #73956f!important;
+}
+.box__cursos{
+    background-color: #7a82ab;
+}
+.box__experiencia{
+    background-color: #62929e;
+}
+.box__projetos{
+    background-color: #FFF;
+    border-top-color: #dcb239!important;
+}
+
+.formacao__item{
+    background-color: #FFF;
+    border:1px solid #73956f;
+    box-shadow: 0px 2px 5px 1px #00000047;
+    margin:0px;
+    padding: 15px 20px;
+    position: relative;
+}
+.formacao__item.margin-right,.formacao__item.margin-left{
+    margin:15px 0px;
+}
+.formacao__item::after{
+    background-color: #73956f;
+    content: "";
+    height: 7px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 170px;
+}
+.formacao__item header{
+    border-bottom: 1px solid #DEDEDE;
+    margin:10px 0px;
+    padding-bottom: 10px;
+}
+.formacao__item header figure{
+    display:block;
+    height: 100%;
+    margin:auto;
+    padding:5px;
+    padding-right: 15px;
+    width: 90px;
+}
+.formacao__item header h2{
+    font-size: 1.2em;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin:0px;
+    padding:0;
+    text-align: center;
+}
+.formacao__item span{
+    color:#73956f;
+    display: inline-block;
+}
+
+
+@media (min-width: 500px) {
+    .formacao__item header h2{
+        font-size: 1.5em;
+    }
+}
+
+@media(min-width:960px){
+    .formacao__item.margin-right{
+        margin-right: 20px;
+    }
+    .formacao__item.margin-left{
+        margin-left: 20px;
+    }
+
+    .formacao__item header figure{
+        width: 12%;
+    }
+}

@@ -1,0 +1,70 @@
+.flex__container__tecno{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.flex__container__tecno .item{
+    background-color: #FFF;
+    border:1px solid #212529;
+    box-shadow: 0px 2px 5px 1px #00000045;
+    cursor: pointer;
+    font-family: 'Audiowide', sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing:2px;
+    min-width: 150px;
+    margin: 15px 0px;
+    padding: 20px 10px;
+    position: relative;
+    text-align: center;
+}
+.flex__container__tecno .item::after{
+    background-color: #212529;
+    content: "";
+    height: 7px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 60px;
+}
+.flex__container__tecno .item figure{
+    margin:0px;
+}
+.flex__container__tecno .item img{
+    width: 70px;
+}
+.flex__container__tecno .item figcaption{
+    color:#4a4a4a;
+    margin-top:20px;
+}
+.flex__container__tecno .item .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #212529ed;
+}
+.flex__container__tecno .item:hover .overlay{
+    opacity: 1;
+}
+
+.flex__container__tecno .item .overlay .text{
+    color: white;
+    font-size: 0.7em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.flex__container__tecno .item .overlay .text i{
+    font-size: 4em;
+    margin-bottom: 16px;
+}

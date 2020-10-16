@@ -7,9 +7,21 @@
     <meta name="description" content="Desenvolvedor web, atuando como programador de sites, blogs e aplicações web, trabalhando com diversas tecnologias como .Net, SQL, PHP, JavaScritp, Html/Css e Java, com experiência profissional e formação na área de informática.">
     <meta name="keywords" content="Programador, Desenvolvedor, Web, .Net, PHP, JavaScript, antony, charles, portfólio, analista">
     <meta name="author" content="Antony Charles">
-    <title>Antony Charles - Portfólio Desenvolvedor Web</title>
+    <title>Antony Charles - Desenvolvedor Web (Front-end | Back-end)</title>
     <link type="text/css" rel="stylesheet" href="assets/css/reset.css"/>
-    <link type="text/css" rel="stylesheet" href="assets/css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/grid.css"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/libs/glider.css"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/btn.css"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/header.css"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/banner.css"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/quem-sou.css"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/tecnologias.css"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/formacao.css"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/experiencia.css"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/projetos.css"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/modal.css"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/outros.css"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/footer.css"/>
     <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet"/><!--font-family: 'Audiowide', sans-serif;-->
     <link rel="icon" href="assets/img/favicons/android-chrome-192x192.png" sizes="192x192" type="image/png">
     <link rel="icon" href="assets/img/favicons/android-chrome-512x512.png" sizes="512x512" type="image/png">
@@ -17,33 +29,33 @@
     <link rel="icon" href="assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
     <link rel="icon" href="assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
 </head>
-<body id="body-topo">
-    <header id="header-top" class="header-top">
+<body id="body-topo" onload="startOutrosBodyOnload();startBannerBodyOnload();">
+    <header id="header__top" class="header__top">
         <div class="grid">
             <div class="row">
                 <div class="cl-m-3 cl-g-2">
-                    <figure class="header-logo">
+                    <figure class="header__logo">
                         <a href="#body-topo" onclick="header.scrollLink(this,event)" data-logo="true">
                             <h1><img src="assets/img/logo-antony-charles.png" alt="Antony Charles"/></h1>
                         </a>
                     </figure>
-                    <div id="header-button" class="header-button" onclick="header.changeMenuMobile()">
+                    <div id="header__button" class="header__button" onclick="header.changeMenuMobile()">
                         <div class="bar1"></div>
                         <div class="bar2"></div>
                         <div class="bar3"></div>
                     </div>
                 </div>
                 <div class="cl-m-9 cl-g-10 header-mobile-show" style="display:none">
-                    <nav class="header-nav">
-                        <ul class="header-nav-ul">
+                    <nav class="header__nav">
+                        <ul class="header__nav-ul">
                             <li>
-                                <a href="#quem-sou" onclick="header.scrollLink(this,event)">SOBRE</a>
+                                <a href="#quem__sou" onclick="header.scrollLink(this,event)">SOBRE</a>
                             </li>
                             <li>
-                                <a href="#formacao-academica" onclick="header.scrollLink(this,event)">FORMAÇÃO</a>
+                                <a href="#formacao__academica" onclick="header.scrollLink(this,event)">FORMAÇÃO</a>
                             </li>
                             <li>
-                                <a href="#experiencia-profissional" onclick="header.scrollLink(this,event)">EXPERIÊNCIA</a>
+                                <a href="#experiencia__profissional" onclick="header.scrollLink(this,event)">EXPERIÊNCIA</a>
                             </li>
                             <li>
                                 <a href="#projetos" onclick="header.scrollLink(this,event)">PROJETOS</a>
@@ -59,14 +71,14 @@
     </header>
     <main>
         <aside id="banner" class="banner">
-            <div class="banner-text">
+            <div class="banner__text">
                 <h2>Desenvolvedor Web!</h2>
                 <h4>FRONT-END | BACK-END</h4>
             </div>
             <canvas id="animacao"></canvas>
         </aside>
-        <section class="box-quem-sou">
-            <article id="quem-sou" class="quem-sou">
+        <section class="box__quem__sou">
+            <article id="quem__sou" class="quem__sou">
                 <div class="grid">
                     <div class="row">
                         <div class="cl-12 cl-g-7">
@@ -88,7 +100,7 @@
                 </div>
             </article>
             <div class="grid">
-                <div class="flex-container-tecno">
+                <div class="flex__container__tecno">
                     <aside class="item" onclick="modal.openModal(this)" data-modal="md-html">
                         <figure>
                             <img src="assets/img/icones/html-5.png" alt="HTML"/>
@@ -99,16 +111,16 @@
                         </div>
                     </aside>
                     <div id="md-html" class="modal md-small md-laranja">
-                        <div class="modal-content">
+                        <div class="modal__content">
                             <span class="close" onclick="modal.closeModal(this)">
                                 <i class="fas fa-times"></i>
                             </span>
-                            <h3 class="modal-header"><img src="assets/img/icones/html-5.png" alt="HTML modal"/>HTML/CSS</h3>
+                            <h3 class="modal__header"><img src="assets/img/icones/html-5.png" alt="HTML modal"/>HTML/CSS</h3>
                             <div class="row">
                                 <div class="cl-12">
                                     <p>Com o Html/Css consigo desenvolver páginas para o Front-End, fazendo uso adequado das tags, respeitando as regras semânticas definidas pela W3C e aplicando o Css adequadamente para criar o layout esperado, tanto para desktop como para mobile.</p>
                                     <span class="span">Tags:</span>
-                                    <ul class="list list-projetos">
+                                    <ul class="list list__projetos">
                                         <li>HTML Tags</li>
                                         <li>HTML Forms</li>
                                         <li>HTML Media</li>
@@ -131,17 +143,17 @@
                         </div>
                     </aside>
                     <div id="md-javascript" class="modal md-small md-amarelo">
-                        <div class="modal-content">
+                        <div class="modal__content">
                             <span class="close" onclick="modal.closeModal(this)">
                                 <i class="fas fa-times"></i>
                             </span>
-                            <h3 class="modal-header">
+                            <h3 class="modal__header">
                                 <img src="assets/img/icones/javascript.png" alt="JavaScript modal"/> JavaScript        </h3>
                             <div class="row">
                                 <div class="cl-12">
                                     <p>Tenho um bom conhecimento da linguagem JavaScript puro (ou melhor Vanilla JS), consigo manipular os elementos do DOM e também realizar integração com o back-end através de solicitações Ajax.</p>
                                     <span class="span">Tags:</span>
-                                    <ul class="list list-projetos">
+                                    <ul class="list list__projetos">
                                         <li>JavaScript</li>
                                         <li>JS Objectos</li>
                                         <li>JS Functions</li>
@@ -165,16 +177,16 @@
                         </div>
                     </aside>
                     <div id="md-dot-net" class="modal md-small md-azul">
-                        <div class="modal-content">
+                        <div class="modal__content">
                             <span class="close" onclick="modal.closeModal(this)">
                                 <i class="fas fa-times"></i>
                             </span>
-                            <h3 class="modal-header"><img src="assets/img/icones/hashtag.png" alt=".Net"/> .Net</h3>
+                            <h3 class="modal__header"><img src="assets/img/icones/hashtag.png" alt=".Net"/> .Net</h3>
                             <div class="row">
                                 <div class="cl-12">
                                     <p>Dentro da plataforma .NET, consigo desenvolver aplicações web usando a linguagem C#, criando aplicações <b>MVC</b> e <b>APIS</b>, aplicando as boas práticas de programação com a linguagem C#.</p>
                                     <span class="span">Tags:</span>
-                                    <ul class="list list-projetos">
+                                    <ul class="list list__projetos">
                                         <li>C#</li>
                                         <li>.NET API</li>
                                         <li>.NET Core</li>
@@ -209,17 +221,17 @@
                         </div>
                     </aside>
                     <div id="md-php" class="modal md-small md-roxo">
-                        <div class="modal-content">
+                        <div class="modal__content">
                             <span class="close" onclick="modal.closeModal(this)">
                                 <i class="fas fa-times"></i>
                             </span>
-                            <h3 class="modal-header">
+                            <h3 class="modal__header">
                                 <img src="assets/img/icones/elephant.png" alt="PHP modal"/> PHP        </h3>
                             <div class="row">
                             <div class="cl-12">
                                     <p>Com o PHP consigo desenvolver aplicações web e apis, aplicando as boas práticas de programação com a linguagem PHP.</p>
                                     <span class="span">Tags:</span>
-                                    <ul class="list list-projetos">
+                                    <ul class="list list__projetos">
                                         <li>PHP</li>
                                         <li>POO</li>
                                         <li>Laravel</li>
@@ -246,17 +258,17 @@
                         </div>
                     </aside>
                     <div id="md-sql" class="modal md-small md-azul">
-                        <div class="modal-content">
+                        <div class="modal__content">
                             <span class="close" onclick="modal.closeModal(this)">
                                 <i class="fas fa-times"></i>
                             </span>
-                            <h3 class="modal-header">
-                                <img src="assets/img/icones/sql.png" alt="SQL modal"/> SQL        </h3>
+                            <h3 class="modal__header">
+                                <img src="assets/img/icones/sql.png" alt="SQL modal"/> SQL</h3>
                             <div class="row">
                                 <div class="cl-12">
                                     <p>Tenho um bom conhecimento da linguagem SQL, principalmente para armazenar, manipular e recuperar dados usando uma linguagem de programação como C#, Java ou PHP. Também consigo elaborar scripts para criação de um banco de dados e suas tabelas.</p>
                                     <span class="span">Tags:</span>
-                                    <ul class="list list-projetos">
+                                    <ul class="list list__projetos">
                                         <li>SQL</li>
                                         <li>Mysql</li>
                                         <li>Sql Server</li>
@@ -279,19 +291,17 @@
                 </div>
             </div>
         </section>        
-        <section id="formacao-academica" class="box box-formacao">
+        <section id="formacao__academica" class="box box__formacao">
             <div class="grid">
-                <h4 class="box-title box-green">Formação</h4>
+                <h4 class="box__title box__green">Formação</h4>
                 <div class="row">
                     <div class="cl-12 cl-g-6">
-                        <article class="formacao-item margin-right">
+                        <article class="formacao__item margin-right">
                             <header>
                                 <figure>
                                     <img src="assets/img/icones/reward-cinza.png" alt="Tecnólogo em Informática para Negócios"/>
                                 </figure>
-                                <div>
-                                    <h2>Tecnólogo em Informática para Negócios</h2>
-                                </div>
+                                <h2>Tecnólogo em Informática<br/>para Negócios</h2>
                             </header>
                             <div class="row">
                                 <div class="cl-12 cl-s-8">
@@ -330,13 +340,13 @@
                         </article>
                     </div>
                     <div class="cl-12 cl-g-6">
-                        <article class="formacao-item margin-left">
+                        <article class="formacao__item margin-left">
                             <header>
                                 <figure>
                                     <img src="assets/img/icones/reward-verde.png" alt="Técnico em Informática para Internet"/>
                                 </figure>
                                 <div>
-                                    <h2>Técnico em Informática para Internet</h2>
+                                    <h2>Técnico em Informática<br/>para Internet</h2>
                                 </div>
                             </header>
                             <div class="row">
@@ -378,19 +388,17 @@
                 </div>
             </div>
         </section>      
-        <section id="experiencia-profissional" class="box box-experiencia">
+        <section id="experiencia__profissional" class="box box__experiencia">
             <div class="grid">
-                <h4 class="box-title box-brown">Experiência Profissional</h4>
+                <h4 class="box__title box-brown">Experiência Profissional</h4>
                 <div class="row">
                     <div class="cl-12 cl-g-6">
-                        <article class="experiencia-item margin-right">
+                        <article class="experiencia__item margin-right">
                             <header>
                                 <figure>
                                     <img src="assets/img/icones/suitcase-cinza.png" alt="Analista Programador Júnior"/>
                                 </figure>
-                                <div>
-                                    <h2>Analista Programador Júnior</h2>
-                                </div>
+                                <h2>Analista Programador Júnior</h2>
                             </header>
                             <div class="row">
                                 <div class="cl-12">
@@ -423,7 +431,7 @@
                             <div class="row">
                                 <div class="cl-12">
                                     <span>Tecnologias usadas:</span>
-                                    <ul class="list list-tecnologias">
+                                    <ul class="list list__tecnologias">
                                         <li>.Net</li>
                                         <li>C#</li>
                                         <li>Asp.Net</li>
@@ -437,23 +445,23 @@
                                 </div>
                             </div>
                             <div class="text-center">
-                                <button class="btn btn-secondary" onclick="modal.openModal(this)" data-modal="md-experiencia-atento">
+                                <button class="btn btn__secondary" onclick="modal.openModal(this)" data-modal="md-experiencia-atento">
                                     <i class="fas fa-plus"></i> INFORMAÇÃO
                                 </button>
                             </div>
                             <div id="md-experiencia-atento" class="modal md-azul">
-                                <div class="modal-content">
+                                <div class="modal__content">
                                     <span class="close" onclick="modal.closeModal(this)">
                                         <i class="fas fa-times"></i>
                                     </span>
-                                    <h3 class="modal-header"><img src="assets/img/icones/suitcase-cinza.png" alt="Analista Programador Júnior"/> Analista Programador Júnior</h3>
+                                    <h3 class="modal__header"><img src="assets/img/icones/suitcase-cinza.png" alt="Analista Programador Júnior"/> Analista Programador Júnior</h3>
                                     <div class="row">
                                         <div class="cl-g-8">
                                             <p>Atuei como programador na empresa Atento por 1 ano e 5 meses, durante este período fiz parte da equipe de Sistemas Administrativo, trabalhando com diversos sistemas voltados para o RH, realizei atividades de correção de bugs, refatoração de código e implementação de novas funcionalidades.</p>
                                             <span>Destaque:</span>
                                             <p>Um dos Jobs que realizei foi a criação de diversos <b>dashboard</b> para o sistema de recrutamento de pessoas, usando bibliotecas <b>JavaScript</b> para criação dos gráficos e com <b>C#</b> e <b>SQL</b> para realizar a coleta e agrupamento das informações.</p>
                                             <span>Tecnologias usadas:</span>
-                                            <ul class="list list-tecnologias">
+                                            <ul class="list list__tecnologias">
                                                 <li>.Net</li>
                                                 <li>C#</li>
                                                 <li>Asp.Net</li>
@@ -487,14 +495,12 @@
                         </article>
                     </div>
                     <div class="cl-12 cl-g-6">
-                        <article class="experiencia-item margin-left">
+                        <article class="experiencia__item margin-left">
                             <header>
                                 <figure>
                                     <img src="assets/img/icones/suitcase-cinza.png" alt="Programador Web"/>
                                 </figure>
-                                <div>
-                                    <h2>Programador Web</h2>
-                                </div>
+                                <h2>Programador Web</h2>
                             </header>
                             <div class="row">
                                 <div class="cl-12">
@@ -527,7 +533,7 @@
                             <div class="row">
                                 <div class="cl-12">
                                     <span>Tecnologias usadas:</span>
-                                    <ul class="list list-tecnologias">
+                                    <ul class="list list__tecnologias">
                                         <li>PHP</li>
                                         <li>Laravel</li>
                                         <li>WordPress</li>
@@ -539,16 +545,16 @@
                                 </div>
                             </div>
                             <div class="text-center">
-                                <button class="btn btn-secondary" onclick="modal.openModal(this)" data-modal="md-experiencia-plyn">
+                                <button class="btn btn__secondary" onclick="modal.openModal(this)" data-modal="md-experiencia-plyn">
                                     <i class="fas fa-plus"></i> INFORMAÇÃO
                                 </button>
                             </div>
                             <div id="md-experiencia-plyn" class="modal md-azul">
-                                <div class="modal-content">
+                                <div class="modal__content">
                                     <span class="close" onclick="modal.closeModal(this)">
                                         <i class="fas fa-times"></i>
                                     </span>
-                                    <h3 class="modal-header"><img src="assets/img/icones/suitcase-cinza.png" alt="Programador Web"/> Programador Web</h3>
+                                    <h3 class="modal__header"><img src="assets/img/icones/suitcase-cinza.png" alt="Programador Web"/> Programador Web</h3>
                                     <div class="row">
                                         <div class="cl-g-8">
                                             <p>Atuei como programador na agencia Plyn por 8 meses, durante este período realizei diversos projetos com a linguagem PHP e JavaScript, atuando na criação e manutenção de sites e aplicações web.</p>
@@ -556,7 +562,7 @@
                                             <p>Um dos Jobs que realizei foi a criação de um site <b>WordPress</b> para apresentar os produtos de uma empresa de distribuição de alimentos. O principal desafio deste projeto, foi que todas as informações dos produtos estavam em diversos arquivos <b>Excel</b> e as imagens em diversas pastas.</p> 
                                             <p>A solução apresenta foi criar um script para adequar as informações do Excel para o WordPress.</p>
                                             <span>Tecnologias usadas:</span>
-                                            <ul class="list list-tecnologias">
+                                            <ul class="list list__tecnologias">
                                                 <li>PHP</li>
                                                 <li>Laravel</li>
                                                 <li>WordPress</li>
@@ -590,12 +596,12 @@
                 </div>
             </div>
         </section>
-        <section id="projetos" class="box box-projetos">
+        <section id="projetos" class="box box__projetos">
             <div class="grid">
-                <h4 class="box-title box-yellow">Projetos</h4>
+                <h4 class="box__title box__yellow">Projetos</h4>
                 <div class="row">
                     <div class="cl-12 cl-m-6 cl-g-6">
-                        <article class="projetos-item margin-right">
+                        <article class="projetos__item margin-right">
                             <header>
                                 <figure>
                                     <img src="assets/img/projetos/logo-mlists.png" alt="MLists (To Do)"/>
@@ -609,7 +615,7 @@
                                     <span>Descrição:</span>
                                     <p>Aplicação web desenvolvida para fazer o controle de tarefas a fazer, permitindo que os usuários se cadastrem, façam login, crie diversas listas e dentro das listas podem adicionar as tarefas.</p>
                                     <span>Tecnologias usadas:</span>
-                                    <ul class="list list-projetos height">
+                                    <ul class="list list__projetos height">
                                         <li>C#</li>
                                         <li>.Net Core</li>
                                         <li>Mysql</li>
@@ -620,7 +626,7 @@
                             </div>
                             <div class="row">
                                 <div class="cl-12">
-                                    <a href="https://github.com/antonycharles/mlists.me" target="_blank" class="btn btn-success">
+                                    <a href="https://github.com/antonycharles/mlists.me" target="_blank" class="btn btn__success">
                                         <i class="fab fa-github"></i> Código
                                     </a>
                                 </div>
@@ -628,7 +634,7 @@
                         </article>
                     </div>
                     <div class="cl-12 cl-m-6 cl-g-6">
-                        <article class="projetos-item margin-left">
+                        <article class="projetos__item margin-left">
                             <header>
                                 <figure>
                                     <img src="assets/img/projetos/logo-fat.png" alt="Fat - Sistema Estoque"/>
@@ -642,7 +648,7 @@
                                     <span>Descrição:</span>
                                     <p>Projeto de faculdade de uma aplicação web para o controle de produtos, compras e vendas de um estoque, contendo também funcionalidades de autenticação e autorização de usuários e perfis robusta.</p>
                                     <span>Tecnologias usadas:</span>
-                                    <ul class="list list-projetos height">
+                                    <ul class="list list__projetos height">
                                         <li>PHP</li>
                                         <li>Laravel</li>
                                         <li>Mysql</li>
@@ -653,7 +659,7 @@
                             </div>
                             <div class="row">
                                 <div class="cl-12">
-                                    <a href="https://github.com/antonycharles/sistema-estoque.loc" target="_blank" class="btn btn-success">
+                                    <a href="https://github.com/antonycharles/sistema-estoque.loc" target="_blank" class="btn btn__success">
                                         <i class="fab fa-github"></i> Código
                                     </a>
                                 </div>
@@ -663,313 +669,20 @@
                 </div>
             </div>
         </section>
-        <section id="cursos-extras" class="box box-cursos">
+        <section id="cursos-extras" class="box box__cursos">
             <div class="grid">
-                <h4 class="box-title box-blue">Outros</h4>
-                <div class="row">
-                    <div class="cl-12 cl-m-6 cl-g-4">
-                        <article>
-                            <div class="cursos-item" onclick="modal.openModal(this)" data-modal="md-formacao-dotnet-alura">
-                                <span class="tab tab-curso">Curso</span>
-                                <header>
-                                    <h2>Formação .NET - Alura</h2>
-                                    <figure>
-                                        <img src="assets/img/icones/083-video-conference.png" alt="Formação .NET - Alura"/>
-                                    </figure>
-                                    <div class="overlay">
-                                        <div class="text"><i class="fas fa-plus-circle"></i>INFORMAÇÃO</div>
-                                    </div>
-                                </header>
-                            </div>
-                            <div id="md-formacao-dotnet-alura" class="modal md-small md-azul-2">
-                                <div class="modal-content">
-                                    <span class="close" onclick="modal.closeModal(this)">
-                                        <i class="fas fa-times"></i>
-                                    </span>
-                                    <h3 class="modal-header"><img src="assets/img/icones/083-video-conference.png"/> Formação .NET - Alura</h3>
-                                    <div class="row">
-                                        <div class="cl-12">
-                                            <p>Conclui a Formação .NET na plataforma Alura, realizei diversos cursos referentes a linguagem C# e também a plataforma .NET.</p>
-                                            <span class="span">Lista de cursos:</span>
-                                            <ul class="list list-projetos li-block">
-                                                <li>C# parte 1: Primeiros passos</li>
-                                                <li>C# parte 2: Introdução à Orientação a Objetos</li>
-                                                <li>C# parte 3: Entendendo herança e interface</li>
-                                                <li>C# parte 4: Entendendo exceções</li>
-                                                <li>C# parte 5: Bibliotecas DLLs, documentação e usando o NuGet</li>
-                                                <li>C# parte 6: Strings, expressões regulares e a classe Object</li>
-                                                <li>C# parte 7: Array e tipos genéricos</li>
-                                                <li>C# parte 8: List &lt;T&gt;, lambda, linq</li>
-                                                <li>C# Parte 9: Entrada e saída (I/O) com streams</li>
-                                                <li>Asp.NET Core: Uma webapp usando o padrão MVC</li>
-                                                <li>ASP.NET Core parte 1: Um e-Commerce com MVC e EF Core</li>
-                                                <li>ASP.NET Core parte 2: Um e-Commerce com MVC e EF Core</li>
-                                                <li>ASP.NET Core Parte 3: Identity</li>
-                                                <li>ASP.NET Core Parte 4: IdentityServer</li>
-                                                <li>NHibernate: Persistência de dados com C#</li>
-                                                <li>Entity Framework Core: Banco de dados de forma eficiente</li>
-                                                <li>C#: Testes de unidade e TDD com xUnit</li>
-                                                <li>Mocks em C#: Testes de Integração com xUnit e Moq</li>
-                                                <li>Design Patterns C# I: Boas práticas de programação</li>
-                                                <li>Design Patterns C# II: Boas práticas de programação</li>
-                                                <li>SOLID com C#: Orientação a Objetos com C#</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>           
-                    </div>
-                    <div class="cl-12 cl-m-6 cl-g-4">
-                        <article>
-                            <div class="cursos-item" onclick="modal.openModal(this)" data-modal="md-seguranca-em-aplicacoes-web">
-                                <span class="tab tab-livro">Livro</span>
-                                <header>
-                                    <h2>Segurança em Aplicações web</h2>
-                                    <figure>
-                                        <img src="assets/img/icones/book.png" alt="Segurança em Aplicações web"/>
-                                    </figure>
-                                    <div class="overlay">
-                                        <div class="text"><i class="fas fa-plus-circle"></i>INFORMAÇÃO</div>
-                                    </div>
-                                </header>
-                            </div>
-                            <div id="md-seguranca-em-aplicacoes-web" class="modal md-small md-vermelho-2">
-                                <div class="modal-content">
-                                    <span class="close" onclick="modal.closeModal(this)">
-                                        <i class="fas fa-times"></i>
-                                    </span>
-                                    <h3 class="modal-header"><img src="assets/img/icones/book.png"/> Segurança em Aplicações web</h3>
-                                    <div class="row">
-                                        <div class="cl-12">
-                                            <p>O livro <b>Segurança Em aplicações web</b> da editora <b>Casa do Código</b>, apresenta algumas das principais vulnerabilidade de aplicações web, explica como estas ameaças funcionam e como fazer para corrigir tais inseguranças.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>            
-                    </div>
-                    <div class="cl-12 cl-m-6 cl-g-4">
-                        <article>
-                            <div class="cursos-item" onclick="modal.openModal(this)" data-modal="md-formacao-microsoft-sql-server-alura">
-                                <span class="tab tab-curso">Curso</span>
-                                <header>
-                                    <h2>Formação Sql com Microsoft SQL Server 2017 - Alura</h2>
-                                    <figure>
-                                        <img src="assets/img/icones/083-video-conference.png" alt="Formação Sql com Microsoft SQL Server 2017"/>
-                                    </figure>
-                                    <div class="overlay">
-                                        <div class="text"><i class="fas fa-plus-circle"></i>INFORMAÇÃO</div>
-                                    </div>
-                                </header>
-                            </div>
-                            <div id="md-formacao-microsoft-sql-server-alura" class="modal md-small md-azul-2">
-                                <div class="modal-content">
-                                    <span class="close" onclick="modal.closeModal(this)">
-                                        <i class="fas fa-times"></i>
-                                    </span>
-                                    <h3 class="modal-header"><img src="assets/img/icones/083-video-conference.png"/> Formação Sql com Microsoft SQL Server 2017 - Alura</h3>
-                                    <div class="row">
-                                        <div class="cl-12">
-                                            <p>Conclui a Formação Microsoft SQL Server 2017 na plataforma Alura, realizei diversos cursos referentes a linguagem SQL dentro da plataforma Sql Server.</p>
-                                            <span class="span">Lista de cursos:</span>
-                                            <ul class="list list-projetos li-block">
-                                                <li>SQL Server: Introdução ao SQL com Microsoft SQL Server 2017</li>
-                                                <li>SQL Server: Consultas avançadas com Microsoft SQL Server 2017</li>
-                                                <li>SQL Server: Manipulação de dados com Microsoft SQL Server 2017</li>
-                                                <li>SQL Server: T-SQL com Microsoft SQL Server 2017</li>
-                                                <li>SQL Server: Administração do Microsoft SQL Server 2017</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>            
-                    </div>
-                    <div class="cl-12 cl-m-6 cl-g-4">
-                        <article>
-                            <div class="cursos-item" onclick="modal.openModal(this)" data-modal="md-livro-desconstruindo-a-web">
-                                <span class="tab tab-livro">Livro</span>
-                                <header>
-                                    <h2>Desconstruindo a Web</h2>
-                                    <figure>
-                                        <img src="assets/img/icones/book.png" alt="Desconstruindo a Web"/>
-                                    </figure>
-                                    <div class="overlay">
-                                        <div class="text"><i class="fas fa-plus-circle"></i>INFORMAÇÃO</div>
-                                    </div>
-                                </header>
-                            </div>
-                            <div id="md-livro-desconstruindo-a-web" class="modal md-small md-vermelho-2">
-                                <div class="modal-content">
-                                    <span class="close" onclick="modal.closeModal(this)">
-                                        <i class="fas fa-times"></i>
-                                    </span>
-                                    <h3 class="modal-header"><img src="assets/img/icones/book.png"/> Desconstruindo a Web</h3>
-                                    <div class="row">
-                                        <div class="cl-12">
-                                            <p>O livro <b>Desconstruindo a Web</b> (As tecnologias por trás de uma requisição) da editora <b>Casa do Código</b>, apresenta todos os eventos que ocorrem em uma requisição HTTP, iniciando no navegador, passando pelo sistema operacional, passando pela rede e sendo processada pelo servidor.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>            
-                    </div>
-                    <div class="cl-12 cl-m-6 cl-g-4">
-                        <article>
-                            <div class="cursos-item" onclick="modal.openModal(this)" data-modal="md-formacao-front-end">
-                                <span class="tab tab-curso">Curso</span>
-                                <header>
-                                    <h2>Formação Front-End - Alura</h2>
-                                    <figure>
-                                        <img src="assets/img/icones/083-video-conference.png" alt="Formação Front End"/>
-                                    </figure>
-                                    <div class="overlay">
-                                        <div class="text"><i class="fas fa-plus-circle"></i>INFORMAÇÃO</div>
-                                    </div>
-                                </header>
-                            </div>
-                            <div id="md-formacao-front-end" class="modal md-small md-azul-2">
-                                <div class="modal-content">
-                                    <span class="close" onclick="modal.closeModal(this)">
-                                        <i class="fas fa-times"></i>
-                                    </span>
-                                    <h3 class="modal-header"><img src="assets/img/icones/083-video-conference.png"/> Formação Front-End - Alura</h3>
-                                    <div class="row">
-                                        <div class="cl-12">
-                                            <p>Conclui a Formação Front-End na plataforma Alura, realizei diversos cursos referentes ao Html, Css e Javascript.</p>
-                                            <span class="span">Lista de cursos:</span>
-                                            <ul class="list list-projetos li-block">
-                                                <li>HTML5 e CSS3 parte 1: A primeira página da Web</li>
-                                                <li>HTML5 e CSS3 parte 2: Posicionamento, listas e navegação</li>
-                                                <li>HTML5 e CSS3 parte 3: Trabalhando com formulários e tabelas</li>
-                                                <li>HTML5 e CSS3 parte 4: Avançando no CSS</li>
-                                                <li>JavaScript: primeiros passos com a linguagem</li>
-                                                <li>JavaScript: introdução a Orientação a Objetos</li>
-                                                <li>JavaScript: Interfaces e Herança em Orientação a Objetos</li>
-                                                <li>Sass e Compass: Descomplicando o CSS</li>
-                                                <li>Flexbox: Posicione elementos na tela</li>
-                                                <li>CSS Grid: Simplificando layouts</li>
-                                                <li>Web Design Responsivo: Páginas que se adaptam do mobile ao desk</li>
-                                                <li>Arquitetura CSS: Descomplicando os problemas</li>
-                                                <li>JavaScript: Conhecendo o Browser e padrões de projeto</li>
-                                                <li>JavaScript: Aprofundando em MVC, padrão Proxy e Factory</li>
-                                                <li>JavaScript: Salvando dados localmente com IndexedDB</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>            
-                    </div>
-                    <div class="cl-12 cl-m-6 cl-g-4">
-                        <article>
-                            <div class="cursos-item" onclick="modal.openModal(this)" data-modal="md-livro-codigo-limpo">
-                                <span class="tab tab-livro">Livro</span>
-                                <header>
-                                    <h2>Clean Code</h2>
-                                    <figure>
-                                        <img src="assets/img/icones/book.png" alt="Clean Code"/>
-                                    </figure>
-                                    <div class="overlay">
-                                        <div class="text"><i class="fas fa-plus-circle"></i>INFORMAÇÃO</div>
-                                    </div>
-                                </header>
-                            </div>
-                            <div id="md-livro-codigo-limpo" class="modal md-small md-vermelho-2">
-                                <div class="modal-content">
-                                    <span class="close" onclick="modal.closeModal(this)">
-                                        <i class="fas fa-times"></i>
-                                    </span>
-                                    <h3 class="modal-header"><img src="assets/img/icones/book.png"/> Clean Code</h3>
-                                    <div class="row">
-                                        <div class="cl-12">
-                                            <p>O livro <b>Clean Code</b> do autor Robert C. Marlin, apresenta diversos princípios, padrões e práticas para criar um código limpo. Proporcionando uma base de conhecimento que descreve a forma como pensamos quando criamos, lemos e limpamos um código.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>            
-                    </div>
-                    <div class="cl-12 cl-m-6 cl-g-4">
-                        <article>
-                            <div class="cursos-item" onclick="modal.openModal(this)" data-modal="md-formacao-java">
-                                <span class="tab tab-curso">Curso</span>
-                                <header>
-                                    <h2>Formação Java - Alura (cursando)</h2>
-                                    <figure>
-                                        <img src="assets/img/icones/083-video-conference.png" alt="Formação Java (cursando)"/>
-                                    </figure>
-                                    <div class="overlay">
-                                        <div class="text"><i class="fas fa-plus-circle"></i>INFORMAÇÃO</div>
-                                    </div>
-                                </header>
-                            </div>
-                            <div id="md-formacao-java" class="modal md-small md-azul-2">
-                                <div class="modal-content">
-                                    <span class="close" onclick="modal.closeModal(this)">
-                                        <i class="fas fa-times"></i>
-                                    </span>
-                                    <h3 class="modal-header"><img src="assets/img/icones/083-video-conference.png"/> Formação Java (cursando)</h3>
-                                    <div class="row">
-                                        <div class="cl-12">
-                                            <p>Estou <b>cursando</b> a Formação Java na plataforma Alura.</p>
-                                            <span class="span">Lista de cursos:</span>
-                                            <ul class="list list-projetos li-block">
-                                                <li>Java parte 1: Primeiros passos</li>
-                                                <li>Java parte 2: Introdução à Orientação a Objetos</li>
-                                                <li>Java parte 3: Entendendo herança e interface</li>
-                                                <li>Java parte 4: Entendendo exceções</li>
-                                                <li>Java parte 5: Pacotes e java.lang</li>
-                                                <li>Java parte 6: Conhecendo o java.util</li>
-                                                <li>Java parte 7: Trabalhando com java.io</li>
-                                                <li>Java: Dominando as Collections</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>            
-                    </div>
-                    <!--<div class="cl-12 cl-m-6 cl-g-4">
-                        <article>
-                            <div class="cursos-item" onclick="modal.openModal(this)" data-modal="md-livro-introducao-arquitetura-design-software">
-                                <span class="tab tab-livro">Livro</span>
-                                <header>
-                                    <h2>Introdução à Arquitetura e Design de Software</h2>
-                                    <figure>
-                                        <img src="assets/img/icones/book.png" alt="Introdução à Arquitetura e Design de Software"/>
-                                    </figure>
-                                    <div class="overlay">
-                                        <div class="text"><i class="fas fa-plus-circle"></i>INFORMAÇÃO</div>
-                                    </div>
-                                </header>
-                            </div>
-                            <div id="md-livro-introducao-arquitetura-design-software" class="modal md-small md-vermelho-2">
-                                <div class="modal-content">
-                                    <span class="close" onclick="modal.closeModal(this)">
-                                        <i class="fas fa-times"></i>
-                                    </span>
-                                    <h3 class="modal-header"><img src="assets/img/icones/book.png"/> Introdução à Arquitetura e Design de Software</h3>
-                                    <div class="row">
-                                        <div class="cl-12">
-                                            <p></p>
-                                            <span class="span">Lista de cursos:</span>
-                                            <ul class="list list-projetos li-block">
-                                                <li></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>            
-                    </div>-->
+                <h4 class="box__title box__blue">Outros</h4>
+                <div class="glider-contain">
+                    <div id="glider" class="glider"></div>
+                    <button class="glider-prev"><i class="fas fa-angle-left"></i></button>
+                    <button class="glider-next"><i class="fas fa-angle-right"></i></button>
+                    <div id="dots"></div>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-        <div class="grid-fluid box-contatos">
+        <div class="grid-fluid box__contatos">
             <div class="grid">
                 <div class="row">
                     <div class="cl-12  text-center">
@@ -996,7 +709,7 @@
                 </div>
             </div>
         </div>
-        <div class="grid-fluid box-contatos-rodape">
+        <div class="grid-fluid box__contatos__rodape">
             <div class="grid">
                 <div class="row">
                     <div class="cl-12">
@@ -1007,6 +720,10 @@
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/3e96037d7e.js" crossorigin="anonymous"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/banner.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/libs/glider.min.js"></script>
+    <script src="assets/js/outros.js"></script>
 </body>
 </html>
