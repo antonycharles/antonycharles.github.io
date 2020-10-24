@@ -47,6 +47,28 @@
     transition: 5s;
 }
 
+.banner__icones{
+    color:#FFF;
+    margin-top:25px;
+}
+.banner__icones .banner__icones__link{
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    color: #FFF;
+    display: inline-flex;
+    font-size: 1.8em;
+    height: 50px;
+    margin: 0px 40px;
+    text-align: center;
+    width: 50px;
+}
+.banner__icones .banner__icones__link i{
+    margin:auto;
+}
+.banner__icones .banner__icones__link:hover{
+    background-color: #00000026;
+}
+
 
 @media (min-width: 540px) {
     .banner h2{

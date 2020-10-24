@@ -48,7 +48,7 @@ const outros = {
 
     templateLivro(item){
         return `<aside class="cursos__item">
-                    <span class="tab tab__livro">LIvro</span>
+                    <span class="tab tab__livro">Livro</span>
                     <figure>
                         <img src="assets/img/icones/book.png" alt="${item.titulo}">
                     </figure>
